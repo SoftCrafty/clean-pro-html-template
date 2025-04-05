@@ -1,0 +1,35 @@
+@use '../root' as *;
+
+.form {
+    &__group {
+      span {
+        color: $title-color;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+  
+      input,
+      textarea {
+        border: 1px solid rgba(38, 38, 38, 0.10);
+        color: $title-color;
+        background-color: transparent;
+        padding: 15px 20px;
+        border-radius: 6px;
+        width: 100%;
+        outline: none;
+  
+        &::placeholder {
+          color: $title-color;
+        }
+      }
+  
+      textarea {
+        padding-top: 18px;
+        height: 178px;
+        border-radius: 5px;
+      }
+      &--large textarea {
+        height: 189px;
+      }
+    }  
+}

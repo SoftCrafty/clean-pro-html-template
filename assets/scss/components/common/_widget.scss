@@ -1,0 +1,282 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+
+.widget {
+  &-card {
+    padding: 40px 30px;
+    border-radius: 20px;
+    background: $theme-color;
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+
+    @include breakpoint (max-xs) {
+      padding: 30px 20px;
+    }
+
+    &__title {
+      padding-bottom: 25px;
+    }
+    &-search {
+      form {
+        position: relative;
+        input {
+            padding: 17px 20px 17px 46px;
+            width: 100%;
+
+            color: $title-color;
+            font-family: "Plus Jakarta Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;           
+            border-radius: 6px;
+            border: 1px solid rgba(38, 38, 38, 0.10);
+            background-color: $white;
+        }
+
+        button {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 100%;
+            font-size: 18px;
+            color: $theme-color;
+            text-align: center;
+        }
+      }
+    }
+    &-services {
+      ul {
+        li {
+          border-radius: 6px;
+          border: 1px solid rgba(38, 38, 38, 0.10);
+          background: $white;
+          &:not(:last-child) {
+              margin-bottom: 12px;
+          }
+
+          &:hover {
+            background: $theme-color;
+
+            a {
+              color: $white;
+              i {
+                  color: $white;
+              }
+            }
+          }
+
+          a {
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $title-color;
+            font-family: "Plus Jakarta Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; 
+
+            i {
+              color: $title-color;
+            }
+          }
+          &.active {
+            background-color: $theme-color;
+            a {
+              color: $white;
+              i {
+                  color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-post {
+      &-items {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        &:not(:last-child) {
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+          border-bottom: 1px solid rgba(38, 38, 38, 0.10);
+        }
+
+        &__thumb {
+          border-radius: 20px;
+          img {
+            max-width: fit-content;
+            border-radius: 20px;
+          }
+        }
+        &-content {
+          h5 {
+            padding-bottom: 12px;
+          }
+          p {
+            color: $theme-color;
+            font-family: "Plus Jakarta Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            padding-top: 4px;
+          }
+        }
+      }
+    }
+    &-tagcloud {
+      &__list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+
+        li {
+          color: $title-color;
+          font-family: "Plus Jakarta Sans";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px; 
+          position: relative;
+  
+          &:not(:last-child)::after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 15px;
+            background: $title-color;
+            margin-left: 10px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+  &-getTouch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #F3604C 0%, #262626 100%);
+    height: 470px;
+    @include breakpoint (max-xs) {
+      height: 430px;
+    }
+
+    &__icon {
+      margin-top: 60px;
+      display: flex;
+      width: 90px;
+      height: 90px;
+      padding: 21.336px 20.666px 20.664px 21.334px;
+      align-items: center;
+      border-radius: 10px;
+      background: $white;
+    }
+    &__title {
+      margin-top: 25px;
+      max-width: 300px;
+      @include breakpoint (max-xl) {
+        max-width: 255px;
+      }
+      @include breakpoint (max-lg) {
+        max-width: 300px;
+      }
+      h3 {
+        color: $white;
+        text-align: center;
+      }
+    }
+    &__text {
+      margin-top: 5px;
+      max-width: 300px;
+      p {
+        color: $theme-color;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+      }
+    }
+  }
+}
+.widget2 {
+    &-card {
+      padding-left: 85px;
+      @include breakpoint (max-xxl) {
+        padding-left: 0;
+      }
+      &-header {
+        padding: 16px 30px;
+        border-radius: 20px 20px 0px 0px;
+        background: $theme-color;
+        &__title {
+          h5 {
+            color: $white;
+            font-family: $title-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px; 
+            text-transform: none;
+          }
+        }
+      }
+      &-body {
+        padding: 24px 30px 40px;
+        border-radius: 0px 0px 20px 20px;
+        background: $title-color;
+        &-items {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          &:not(:last-child) {
+            padding-bottom: 14px;
+            margin-bottom: 14px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+          }
+          &__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $white;
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+          }
+          &-content {
+            &__label {
+              padding-bottom: 6px;
+              color: $white;
+              font-family: "Plus Jakarta Sans";
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 16px; /* 100% */
+            }
+            &__value {
+              color: $white;
+              font-family: $title-font;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 20px; /* 111.111% */
+              letter-spacing: -0.36px;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+}

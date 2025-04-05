@@ -1,0 +1,236 @@
+@use '../root' as *;
+
+/*----------------------------------------------
+    # Buttons style here
+----------------------------------------------*/
+
+.theme-btn {
+    &.style1 {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        color: $white;
+        font-family: $title-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: -0.36px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        background: $theme-color;
+        padding: 22px 28px;
+        border: 1px solid transparent;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        @include breakpoint (max-md) {
+            padding: 15px 28px;
+        }
+        a {
+            color: $white!important;
+            display: inline-block;
+        }
+        i {
+            margin-left: 6px;
+        }
+        &:before {
+            transition-duration: 800ms;
+            position: absolute;
+            width: 210%;
+            height: 290%;
+            content: "";
+            top: 162%;
+            left: 50%;
+            background: $title-color;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 80%;
+            z-index: -1;
+        }
+        &:hover {
+            color: $theme-color !important;
+            border: 1px solid $title-color;
+            &.gt-btn-icon-1 {
+                &::after {
+                    color: $theme-color;
+                }
+            }
+            &:before {
+                top: -96%;
+            }
+        }
+    } 
+}
+
+.theme-btn {
+    &.style2 {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        color: $white;
+        font-family: $title-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: -0.36px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        background: $theme-color;
+        padding: 17px 28px;
+        border: 1px solid transparent;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        @include breakpoint (max-md) {
+            padding: 15px 28px;
+        }
+        a {
+            color: $white!important;
+            display: inline-block;
+        }
+        i {
+            margin-left: 6px;
+        }
+        &:before {
+            transition-duration: 800ms;
+            position: absolute;
+            width: 210%;
+            height: 290%;
+            content: "";
+            top: 162%;
+            left: 50%;
+            background: $title-color;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 80%;
+            z-index: -1;
+        }
+        &:hover {
+            color: $theme-color !important;
+            border: 1px solid $title-color;
+            &.gt-btn-icon-1 {
+                &::after {
+                    color: $theme-color;
+                }
+            }
+            &:before {
+                top: -96%;
+            }
+        }
+    } 
+}
+
+.theme-btn {
+    &.style3 {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        color: $title-color;
+        font-family: $title-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: -0.36px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        background: $white;
+        padding: 22px 39px;
+        border: 1px solid transparent;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        @include breakpoint (max-md) {
+            padding: 15px 28px;
+        }
+        a {
+            color: $white!important;
+            display: inline-block;
+        }
+        i {
+            margin-left: 6px;
+        }
+        &:before {
+            transition-duration: 800ms;
+            position: absolute;
+            width: 210%;
+            height: 290%;
+            content: "";
+            top: 162%;
+            left: 50%;
+            background: $title-color;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 80%;
+            z-index: -1;
+        }
+        &:hover {
+            color: $theme-color !important;
+            border: 1px solid $title-color;
+            &.gt-btn-icon-1 {
+                &::after {
+                    color: $theme-color;
+                }
+            }
+            &:before {
+                top: -96%;
+            }
+        }
+    } 
+}
+
+.global-btn {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    background: $title-color;
+    color: $white;
+    font-family: $body-font;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 20px 16px 20px 25px;
+    min-width: 160px;
+    cursor: pointer;
+    border-radius: 12px;
+  
+    &:before {
+        transition-duration: 800ms;
+        position: absolute;
+        width: 210%;
+        height: 290%;
+        content: "";
+        top: 162%;
+        left: 50%;
+        background: $theme-color;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%) rotate(-8deg);
+        border-radius: 80%;
+        z-index: -1;
+    }
+    &:hover {
+        color: $theme-color !important;
+        i {
+            color: $white;
+        }
+        &:before {
+            top: -96%;
+        }
+    }
+}

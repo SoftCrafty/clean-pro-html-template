@@ -1,0 +1,88 @@
+/*-----------------------------------------------------------------
+Theme Name: CleanPro
+Author: SoftCrafty
+Author URI: https://themeforest.net/user/SoftCrafty
+Version: 1.0.0 
+Description: CleanPro - Creative & Digital Agency Html Template
+-------------------------------------------------------------------
+ CSS TABLE OF CONTENTS
+------------------------------------------------------------------- 
+1. Common
+2. Header
+3. Hero
+4. About
+5. Meanmenu
+6. Title
+7. Service
+8. Project
+9. Testimonial
+10. Contact
+11. Blog
+12. Pricing
+13. WCU
+14. Team
+15. FAQ
+16. Timeline
+17. Error
+18. Footer
+------------------------------------------------------------------*/
+
+//====== Components Start ======//
+
+/* 1. Common */
+@use "./components/common/base";
+@use "./components/common/counter-box";
+@use "./components/common/slider-button";
+@use "./components/common/fancy-box";
+@use "./components/common/progress-bar";   
+@use "./components/common/marquee";   
+@use "./components/common/video";   
+@use "./components/common/popupsearch";   
+@use "./components/common/sidemenu";   
+@use "./components/common/pagination";   
+@use "./components/common/breadcrumb";   
+@use "./components/common/widget";   
+
+/* 2. Header */
+@use "./components/header";
+
+/* 3. Hero */
+@use "./components/hero";
+
+/* 4. About */
+
+/* 5. Meanmenu */
+@use "./components/meanmenu";
+  
+/* 6. Title */
+@use "./components/title";
+
+/* 7. Service */
+
+/* 8. Project */
+
+/* 9. Testimonial */
+
+/* 10. Contact */
+
+/* 11. Blog */
+
+/* 12. Pricing */
+
+/* 13. WCU */
+
+/* 14. Team */
+
+/* 15. FAQ */
+
+/* 16. Timeline */
+
+/* 17. Error */
+@use "./components/error"; 
+
+/* 18. Footer */
+@use "./components/footer";
+
+//====== Components End ======//
+
+//====== Template Section Style End ======//

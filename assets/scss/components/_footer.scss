@@ -1,0 +1,687 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+
+/*----------------------------------------------
+    # Footer style here
+----------------------------------------------*/
+
+.footer1 {
+  position: relative;
+  &-wrapper {   
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &-logoInfo {
+      &__logo {
+        padding-bottom: 15px;
+      }
+      &__desc {
+        color: $theme-color;
+        font-family: $body-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 166.667% */
+      }
+      &-social {
+        padding-top: 23px;
+        display: flex;
+        gap: 8px;
+        &__item {
+          a {
+            display: flex;
+            width: 44px;
+            height: 44px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 6px;
+            background: $white;
+      
+            &:hover {
+              background: $theme-color;
+              svg {
+                path {
+                  fill: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &-link {
+      @include breakpoint (xl) {
+        padding-left: 44px;
+      }
+      @include breakpoint (xxl) {
+        padding-left: 60px;
+      }
+      &__title {
+        color: #FFF;
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        text-transform: capitalize;
+        padding-bottom: 15px;
+      }
+      &-list {
+        &__item {    
+          &:not(:last-child) {
+            padding-bottom: 13px;
+          }
+          a {
+            color: $theme-color;
+            font-family: $body-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            &:hover {
+              color: $theme-color;
+            }
+          }
+        }
+      }
+    }
+    &-service {
+      @include breakpoint (xl) {
+        padding-left: 44px;
+      }
+      @include breakpoint (xxl) {
+        padding-left: 67px;
+      }
+      &__title {
+        color: #FFF;
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        text-transform: capitalize;
+        padding-bottom: 15px;
+      }
+      &-list {
+        &__item {    
+          &:not(:last-child) {
+            padding-bottom: 13px;
+          }
+          a {
+            color: $theme-color;
+            font-family: $body-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            &:hover {
+              color: $theme-color;
+            }
+          }
+        }
+      }
+    }
+    &-subscribe {
+      border-radius: 10px;
+      background: rgba(254, 254, 254, 0.10);
+      padding: 38px 25px;
+      height: 200px;
+
+      @include breakpoint (xl) {
+        margin-left: 85px;
+      }
+      
+      &__title {
+        color: #FFF;
+        font-family: $title-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px; /* 130% */
+        letter-spacing: -0.4px;
+        text-transform: uppercase;
+        padding-bottom: 26px;
+      }
+      &-form {
+        position: relative;
+        &__input {
+          border-radius: 6px;
+          background: $white;  
+          width: 100%;
+          height: 44px;
+          padding: 21px 16px;
+          border: none;
+          outline: none;
+          box-sizing: border-box;
+
+          color: $title-color;
+          font-family: $body-font;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px; 
+        }
+        &__button {
+          position: absolute;
+          right: 2px;
+          top: 2px;
+          img {
+            border-radius: 4px;
+            background: $theme-color;
+            padding: 8px;
+          }
+          :hover {
+            background: $title-color;
+          }
+        }
+      }
+    }
+  }
+  &__verticalLine {
+    position: absolute;
+    background: rgba(254, 254, 254, 0.30);
+    width: 1px;
+    height: 470px;
+    top: 0;
+    display: none;
+    @include breakpoint (xxl) {
+      display: block;
+      left: 34.7%;
+    }
+    @include breakpoint (xxxl) {
+      left: 37%;
+    }
+    @include breakpoint (xl2) {
+      left: 38.7%;
+    }
+  }
+  &-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(254, 254, 254, 0.30);
+    padding-top: 21px;
+    @include breakpoint (md){
+      flex-direction: row;
+    }
+
+    p {
+      color: $white;
+      font-family: $body-font;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; 
+      @include breakpoint (md){
+        font-size: 18px;
+
+      }
+    }
+
+    &__links {
+      a {
+        color: $white;
+        font-family: $body-font;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        @include breakpoint (md){
+          font-size: 18px;
+  
+        }
+
+        &:not(:last-child) {
+          padding-right: 20px;
+        }
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.footer2 {
+  position: relative;
+  &-wrapper {   
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding-bottom: 80px;
+      @include breakpoint (sm){
+        gap: 35px;
+      }
+      @include breakpoint (md){
+        flex-direction: row;
+        gap: 100px;
+      }
+      @include breakpoint (lg){
+        padding-bottom: 114px;
+      }
+
+      &__text {
+        padding-bottom: 14px;
+        h2 {
+          color: $white;
+          font-family: $title-font;
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 60px; 
+          letter-spacing: -1.6px;
+          text-transform: uppercase;
+          padding-bottom: 15px;
+
+          @include breakpoint (lg){
+            font-size: 60px;
+            line-height: 86px;
+          }
+          @include breakpoint (xl){
+            font-size: 80px;
+            line-height: 86px;
+          }
+        }
+        p {
+          color: $white;
+          font-family: $body-font;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px; 
+        }
+      }
+      &__cta {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        a {
+          color: $white;
+          background-color: #F3604C;
+          font-family: $title-font;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 20px;
+          letter-spacing: -0.36px;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          width: 180px;
+          height: 180px;
+        }
+      }
+    }
+
+    &-logoInfo {
+      &__logo {
+        padding-bottom: 15px;
+      }
+      &__desc {
+        color: $theme-color;
+        font-family: $body-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 166.667% */
+      }
+      &-social {
+        padding-top: 23px;
+        display: flex;
+        gap: 8px;
+        &__item {
+          a {
+            display: flex;
+            width: 44px;
+            height: 44px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 6px;
+            background: $white;
+      
+            &:hover {
+              background: $theme-color;
+              svg {
+                path {
+                  fill: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &-link {
+      @include breakpoint (xl) {
+        padding-left: 44px;
+      }
+      @include breakpoint (xxl) {
+        padding-left: 100px;
+      }
+      &__title {
+        color: #FFF;
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        text-transform: capitalize;
+        padding-bottom: 15px;
+      }
+      &-list {
+        &__item {    
+          &:not(:last-child) {
+            padding-bottom: 13px;
+          }
+          a {
+            color: $theme-color;
+            font-family: $body-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            &:hover {
+              color: $theme-color;
+            }
+          }
+        }
+      }
+    }
+    &-service {
+      @include breakpoint (xl) {
+        padding-left: 44px;
+      }
+      @include breakpoint (xxl) {
+        padding-left: 38px;
+      }
+      &__title {
+        color: #FFF;
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        text-transform: capitalize;
+        padding-bottom: 15px;
+      }
+      &-list {
+        &__item {    
+          &:not(:last-child) {
+            padding-bottom: 13px;
+          }
+          a {
+            color: $theme-color;
+            font-family: $body-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            &:hover {
+              color: $theme-color;
+            }
+          }
+        }
+      }
+    }    
+    &-contact {
+      @include breakpoint (xl) {
+        padding-left: 44px;
+      }
+      @include breakpoint (xxl) {
+        padding-left: 80px;
+      }
+      &__title {
+        color: #FFF;
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        text-transform: capitalize;
+        padding-bottom: 15px;
+      }
+      &-list {
+        &__item {    
+          &:not(:last-child) {
+            padding-bottom: 13px;
+          }
+          a {
+            color: $theme-color;
+            font-family: $body-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            &:hover {
+              color: $theme-color;
+            }
+          }
+        }
+      }
+    }    
+  }
+
+  &-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(254, 254, 254, 0.30);
+    padding-top: 21px;
+
+    p {
+      color: $white;
+      font-family: $body-font;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; 
+      @include breakpoint (md){
+        font-size: 18px;
+
+      }
+    }    
+  }
+}
+
+.footer3 {
+  position: relative;
+  &-wrapper {   
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0px;
+      padding-bottom: 30px;
+      @include breakpoint (sm){
+        gap: 35px;
+        padding-bottom: 45px;
+      }
+      @include breakpoint (md){
+        gap: 0px;
+      }
+      @include breakpoint (lg){
+        flex-direction: row;
+        padding-bottom: 100px;
+      }
+
+      &__text {
+        padding-bottom: 14px;
+        h2 {
+          color: $white;
+          font-family: $title-font;
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 60px; 
+          letter-spacing: -2px;
+          text-transform: uppercase;
+          padding-bottom: 15px;
+
+          @include breakpoint (lg){
+            font-size: 60px;
+            line-height: 86px;
+          }
+          @include breakpoint (xl){
+            font-size: 100px;
+            line-height: 106px;
+          }
+        }
+        p {
+          color: $white;
+          font-family: $body-font;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px; 
+        }
+      }
+      &-cta {
+        max-width: 500px;
+        padding-top: 10px;
+        &__text {
+          color: $theme-color;
+          -webkit-text-stroke-width: 1;
+          -webkit-text-stroke-color: rgba(255, 255, 255, 0.30);
+          font-family: $body-font;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px; 
+          padding-bottom: 35px;
+        }
+      }
+    }  
+    &-bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(254, 254, 254, 0.30);
+      padding-bottom: 21px;
+      @include breakpoint (lg){
+        flex-direction: row;
+        gap: 15px;
+      }  
+  
+      &__menu{
+        padding-bottom: 15px;
+        @include breakpoint (lg){
+          padding-bottom: 0px;
+        }  
+        ul {
+          li {
+            display: inline-block;
+            margin-right: 15px;
+            position: relative;
+            @include breakpoint (md){
+              margin-right: 38px;              
+            }
+  
+            a {
+              display: inline-block;
+              color: $white;
+              font-family: $body-font;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 30px;
+              i {
+                  margin-left: 8px;
+              }
+            }               
+          }  
+        }
+        
+      }
+  
+      &__links {
+        a {
+          color: $white;
+          font-family: $body-font;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 30px;
+          @include breakpoint (md){
+            font-size: 18px;
+          }
+          &:not(:last-child) {
+            padding-right: 40px;
+          }
+  
+          &:hover {
+            color: white;
+          }
+        }
+      }
+
+      
+    }
+    &-logoInfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 22px;
+      flex-direction: column;
+      gap: 15px;
+      @include breakpoint (md){
+        flex-direction: row;
+      }
+
+      p {
+        color: $white;
+        font-family: $body-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 166.667% */
+      }
+      &-social {
+        display: flex;
+        gap: 8px;
+        &__item {
+          a {
+            display: flex;
+            width: 44px;
+            height: 44px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 12px;
+            background: $white;
+      
+            &:hover {
+              background: $theme-color;
+              svg {
+                path {
+                  fill: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

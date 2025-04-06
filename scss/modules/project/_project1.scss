@@ -1,0 +1,43 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.project1 {
+    position: relative;
+    &__shape {
+        position: absolute;
+        z-index: 1;
+    }
+    .section-top {
+        position: relative;
+        z-index: 5;
+        max-width: 672px;
+
+    }
+    &-thumb {
+        display: flex;
+        position: relative;
+        z-index: 9;
+    }
+    &__btn {
+        display: flex;
+        justify-content: space-around;
+        span {
+            display: inline-flex;
+            padding: 15px 25px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 52px;
+            border: 1px solid #3CA200;
+            background: var(--Main-color-Theme-color-1, #077CEA);
+
+            color: #FFF;
+            text-align: center;
+            font-family: Raleway;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 34px; /* 141.667% */
+        }
+    }
+}

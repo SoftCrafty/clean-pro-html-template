@@ -5566,6 +5566,9 @@ img {
 }
 .team1-card-thumb {
   position: relative;
+}
+.team1-card-thumb__img {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5578,12 +5581,27 @@ img {
   z-index: 1;
   width: 100%;
 }
-.team1-card-thumb__shape img {
+.team1-card-thumb__shape svg {
   width: 100%;
+}
+@media (max-width: 1399px) {
+  .team1-card-thumb__shape {
+    top: -17px;
+  }
+}
+@media (max-width: 1199px) {
+  .team1-card-thumb__shape {
+    top: -5px;
+  }
+}
+@media (max-width: 991px) {
+  .team1-card-thumb__shape {
+    top: 0px;
+  }
 }
 .team1-card-content {
   text-align: center;
-  padding: 30px;
+  padding: 20px 30px 30px;
 }
 .team1-card-content__title {
   color: var(--Text-color-Title-color, #16171A);
@@ -5619,6 +5637,10 @@ img {
   font-style: normal;
   font-weight: 600;
   line-height: 28px; /* 155.556% */
+}
+.team1-card:hover svg g {
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
 }
 
 /* 15. FAQ */

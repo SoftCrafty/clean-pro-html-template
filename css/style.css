@@ -749,7 +749,7 @@ span {
 ----------------------------------------------*/
 @media (min-width: 1600px) {
   .container {
-    max-width: 1314px;
+    max-width: 1344px;
   }
 }
 /*----------------------------------------------
@@ -1833,21 +1833,24 @@ span {
 ----------------------------------------------*/
 .theme-btn.style1 {
   display: inline-block;
+  height: 54px;
+  padding: 22px 25px;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  border: 1px solid var(--Main-color-Theme-color-1, #3CA200);
+  background: var(--Main-color-Theme-color-1, #3CA200);
+  color: var(--White, #FFF);
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  color: var(--white);
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: -0.36px;
-  text-transform: uppercase;
-  border-radius: 6px;
-  background: var(--theme);
-  padding: 22px 28px;
-  border: 1px solid transparent;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1864,7 +1867,7 @@ span {
   display: inline-block;
 }
 .theme-btn.style1 i {
-  margin-left: 6px;
+  margin-left: 10px;
 }
 .theme-btn.style1:before {
   transition-duration: 800ms;
@@ -1881,8 +1884,8 @@ span {
   z-index: -1;
 }
 .theme-btn.style1:hover {
-  color: var(--theme) !important;
-  border: 1px solid var(--title);
+  color: var(--title) !important;
+  border: 1px solid var(--Main-color-Theme-color-1, #3CA200);
 }
 .theme-btn.style1:hover.gt-btn-icon-1::after {
   color: var(--theme);
@@ -1893,21 +1896,23 @@ span {
 
 .theme-btn.style2 {
   display: inline-block;
+  height: 60px;
+  padding: 17px 34px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background: var(--Main-color-Theme-Color, #FFB400);
+  color: #FFF;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  color: var(--white);
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: -0.36px;
-  text-transform: uppercase;
-  border-radius: 6px;
-  background: var(--theme);
-  padding: 17px 28px;
-  border: 1px solid transparent;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1924,7 +1929,7 @@ span {
   display: inline-block;
 }
 .theme-btn.style2 i {
-  margin-left: 6px;
+  margin-left: 10px;
 }
 .theme-btn.style2:before {
   transition-duration: 800ms;
@@ -1942,7 +1947,6 @@ span {
 }
 .theme-btn.style2:hover {
   color: var(--theme) !important;
-  border: 1px solid var(--title);
 }
 .theme-btn.style2:hover.gt-btn-icon-1::after {
   color: var(--theme);
@@ -2120,11 +2124,11 @@ span {
 }
 
 .section-padding {
-  padding: 80px 0;
+  padding: 120px 0;
 }
-@media (min-width: 992px) {
+@media (max-width: 991px) {
   .section-padding {
-    padding: 130px 0;
+    padding: 80px 0;
   }
 }
 

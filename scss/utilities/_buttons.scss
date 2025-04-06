@@ -7,26 +7,31 @@
 .theme-btn {
     &.style1 {
         display: inline-block;
+        height: 54px;
+        padding: 22px 25px;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 0;
+        border-radius: 40px;
+        border: 1px solid var(--Main-color-Theme-color-1, #3CA200);
+        background: var(--Main-color-Theme-color-1, #3CA200);
+        color: var(--White, #FFF);
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+
         position: relative;
         z-index: 1;
         overflow: hidden;
-        color: $white;
-        font-family: $title-font;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 20px;
-        letter-spacing: -0.36px;
-        text-transform: uppercase;
-        border-radius: 6px;
-        background: $theme-color;
-        padding: 22px 28px;
-        border: 1px solid transparent;
         transition: all 0.3s ease-in-out;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
+
         @include breakpoint (max-md) {
             padding: 15px 28px;
         }
@@ -35,7 +40,7 @@
             display: inline-block;
         }
         i {
-            margin-left: 6px;
+            margin-left: 10px;
         }
         &:before {
             transition-duration: 800ms;
@@ -52,8 +57,8 @@
             z-index: -1;
         }
         &:hover {
-            color: $theme-color !important;
-            border: 1px solid $title-color;
+            color: $title-color !important;
+            border: 1px solid var(--Main-color-Theme-color-1, #3CA200);
             &.gt-btn-icon-1 {
                 &::after {
                     color: $theme-color;
@@ -63,32 +68,36 @@
                 top: -96%;
             }
         }
-    } 
+    }  
 }
 
 .theme-btn {
     &.style2 {
         display: inline-block;
+        height: 60px;
+        padding: 17px 34px;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 999px;
+        background: var(--Main-color-Theme-Color, #FFB400);
+        color: #FFF;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px; 
+        text-transform: uppercase;
+
         position: relative;
         z-index: 1;
         overflow: hidden;
-        color: $white;
-        font-family: $title-font;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 20px;
-        letter-spacing: -0.36px;
-        text-transform: uppercase;
-        border-radius: 6px;
-        background: $theme-color;
-        padding: 17px 28px;
-        border: 1px solid transparent;
         transition: all 0.3s ease-in-out;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
+
         @include breakpoint (max-md) {
             padding: 15px 28px;
         }
@@ -97,7 +106,7 @@
             display: inline-block;
         }
         i {
-            margin-left: 6px;
+            margin-left: 10px;
         }
         &:before {
             transition-duration: 800ms;
@@ -115,7 +124,6 @@
         }
         &:hover {
             color: $theme-color !important;
-            border: 1px solid $title-color;
             &.gt-btn-icon-1 {
                 &::after {
                     color: $theme-color;

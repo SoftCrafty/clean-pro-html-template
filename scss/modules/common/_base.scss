@@ -176,9 +176,31 @@ img {
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
     }
   }
+
   
   
   // Global Icon
+  .global-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    &__item {
+      a {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 12px;
+        background: $title-color;
+        &:hover {
+          background: $theme-color;
+        }
+      }
+    }
+  }
+
   .global-social2 {
     padding-top: 11px;
     display: flex;

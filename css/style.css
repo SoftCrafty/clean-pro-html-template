@@ -2548,6 +2548,25 @@ img {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.global-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.global-social__item a {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: var(--title);
+}
+.global-social__item a:hover {
+  background: var(--theme);
+}
+
 .global-social2 {
   padding-top: 11px;
   display: flex;

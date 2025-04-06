@@ -183,19 +183,29 @@ img {
   .global-social {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     &__item {
       a {
         display: flex;
-        width: 44px;
-        height: 44px;
+        width: 34.886px;
+        height: 35px;
         justify-content: center;
         align-items: center;
         gap: 10px;
-        border-radius: 12px;
-        background: $title-color;
+        border-radius: 21px;
+        border: 1px solid var(--Border-color-border-color1, #D8DDE1);
+        background: var(--White-Color, #FFF);
+
+        i {
+          color: var(--Main-color-Theme-color-1, #3CA200);
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
         &:hover {
-          background: $theme-color;
+          background: $white;
         }
       }
     }

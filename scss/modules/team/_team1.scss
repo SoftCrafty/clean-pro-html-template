@@ -1,2 +1,70 @@
 @use '../../root' as *;
 @use '../../utilities' as *;
+
+.team1 {
+    &-card {
+        position: relative;
+        border-radius: 5px;
+        background: var(--BG-color-Smoke-BG-color-2, #ECF1F5);
+        box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.08);
+
+        &-thumb {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 30px;
+            z-index: 9;
+
+            &__shape {
+                position: absolute;
+                top: 0;
+                z-index: 1;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        &-content {
+            text-align: center;
+            padding: 30px;
+            &__title {
+                color: var(--Text-color-Title-color, #16171A);
+                font-family: Raleway;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 34px; /* 141.667% */
+            }
+            &__desc {
+                border-bottom:1px solid rgb(199, 203, 206) ;   
+                padding-bottom: 14px;
+                margin-bottom: 20px;          
+                p {
+                    color: var(--Text-color-Body-text-color, #727272);
+                    font-family: "DM Sans";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 171.429% */
+                }
+            }
+            &__phone {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+
+                p {
+                    color: var(--Text-color-Title-color, #16171A);
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 28px; /* 155.556% */
+                }
+            }
+        }
+    }
+}

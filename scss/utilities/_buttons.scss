@@ -6,8 +6,8 @@
 
 .theme-btn {
     &.style1 {
-        display: inline-block;
-        height: 54px;
+        display: inline-flex;
+        height: 60px;
         padding: 22px 25px;
         align-items: center;
         gap: 8px;
@@ -16,7 +16,7 @@
         border: 1px solid var(--Main-color-Theme-color-1, #3CA200);
         background: var(--Main-color-Theme-color-1, #3CA200);
         color: var(--White, #FFF);
-        font-family: Poppins;
+        font-family: $title-font2;
         font-size: 15px;
         font-style: normal;
         font-weight: 600;
@@ -40,7 +40,9 @@
             display: inline-block;
         }
         i {
-            margin-left: 10px;
+            // margin-left: 8px;
+            color: $white;
+            transform: rotate(-45deg);
         }
         &:before {
             transition-duration: 800ms;
@@ -50,20 +52,15 @@
             content: "";
             top: 162%;
             left: 50%;
-            background: $title-color;
+            background: $yellow2;
             -webkit-transform: translateX(-50%);
             transform: translateX(-50%) rotate(-8deg);
             border-radius: 80%;
             z-index: -1;
         }
         &:hover {
-            color: $title-color !important;
-            border: 1px solid var(--Main-color-Theme-color-1, #3CA200);
-            &.gt-btn-icon-1 {
-                &::after {
-                    color: $theme-color;
-                }
-            }
+            color: $white !important;
+            border: 1px solid $yellow2;
             &:before {
                 top: -96%;
             }
@@ -73,14 +70,14 @@
 
 .theme-btn {
     &.style2 {
-        display: inline-block;
+        display: inline-flex;
         height: 60px;
         padding: 17px 34px;
         align-items: center;
         gap: 10px;
         flex-shrink: 0;
         border-radius: 999px;
-        background: var(--Main-color-Theme-Color, #FFB400);
+        background: $yellow2;
         color: #FFF;
         font-family: "DM Sans";
         font-size: 16px;
@@ -124,11 +121,6 @@
         }
         &:hover {
             color: $theme-color !important;
-            &.gt-btn-icon-1 {
-                &::after {
-                    color: $theme-color;
-                }
-            }
             &:before {
                 top: -96%;
             }
@@ -186,11 +178,6 @@
         &:hover {
             color: $theme-color !important;
             border: 1px solid $title-color;
-            &.gt-btn-icon-1 {
-                &::after {
-                    color: $theme-color;
-                }
-            }
             &:before {
                 top: -96%;
             }

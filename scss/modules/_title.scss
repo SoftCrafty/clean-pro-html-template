@@ -23,7 +23,7 @@
         display: flex;
         justify-content: center;
         gap: 8px;
-        
+
         color: var(--Default-color-White-color, #FFF);
         font-family: Raleway;
         font-size: 20px;
@@ -64,6 +64,18 @@
         font-weight: 700;
         line-height: 54px; /* 112.5% */
         text-transform: capitalize;
+        @include breakpoint (max-xl) {
+            font-size: 45px;
+            line-height: 50px;
+        }
+        @include breakpoint (max-md) {
+            font-size: 42px;
+            line-height: 45px;
+        }
+        @include breakpoint (max-sm) {
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
 
     &__desc {

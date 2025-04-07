@@ -10,12 +10,6 @@
 
         &-thumb {
             position: relative;
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
-            // padding-top: 30px;
-            // z-index: 9;
-
             &__img {
                 position: relative;
                 display: flex;
@@ -30,17 +24,16 @@
                 top: 0;
                 z-index: 1;
                 width: 100%;
-                svg {
+
+                img {
                     width: 100%;
                 }
-                @include breakpoint (max-xxl){
-                    top: -17px;
+
+                &--one {
+                    display: block;
                 }
-                @include breakpoint (max-xl){
-                    top: -5px;
-                }
-                @include breakpoint (max-lg){
-                    top: 0px;
+                &--two {
+                    display: none;
                 }
             }
         }
@@ -86,12 +79,21 @@
             }
         }
         &:hover {
-            svg {
-                g {
-                    opacity: 1;
-                    @include transition;
+            .team1 {
+                &-card {
+                    &-thumb {
+                        &__shape {
+                            &--two {
+                                display: block;
+                                @include transition;
+                            }
+                            &--one {
+                                display: none;
+                            }
+                        }
+                    }
                 }
-            }
+            }            
         }
     }
 }

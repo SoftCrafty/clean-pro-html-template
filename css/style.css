@@ -5762,23 +5762,14 @@ img {
   z-index: 1;
   width: 100%;
 }
-.team1-card-thumb__shape svg {
+.team1-card-thumb__shape img {
   width: 100%;
 }
-@media (max-width: 1399px) {
-  .team1-card-thumb__shape {
-    top: -17px;
-  }
+.team1-card-thumb__shape--one {
+  display: block;
 }
-@media (max-width: 1199px) {
-  .team1-card-thumb__shape {
-    top: -5px;
-  }
-}
-@media (max-width: 991px) {
-  .team1-card-thumb__shape {
-    top: 0px;
-  }
+.team1-card-thumb__shape--two {
+  display: none;
 }
 .team1-card-content {
   text-align: center;
@@ -5819,9 +5810,12 @@ img {
   font-weight: 600;
   line-height: 28px; /* 155.556% */
 }
-.team1-card:hover svg g {
-  opacity: 1;
+.team1-card:hover .team1-card-thumb__shape--two {
+  display: block;
   transition: all 0.4s ease-in-out;
+}
+.team1-card:hover .team1-card-thumb__shape--one {
+  display: none;
 }
 
 /* 15. FAQ */

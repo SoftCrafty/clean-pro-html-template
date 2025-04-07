@@ -24,6 +24,18 @@
       z-index: 9;
     }
   }
+  &__shape1 {
+    position: absolute;
+    top: 0;
+    left: 38%;
+    z-index: 9;
+  }
+  &__shape2 {
+    position: absolute;
+    bottom: 25%;
+    right: 0%;
+    z-index: 9;
+  }
   &-content {
     position: absolute;
     z-index: 9;
@@ -33,7 +45,7 @@
     &-btn {
       display: flex;
       gap: 30px;
-      &-top {
+      &-item {
         position: relative;
         p {
           padding: 35px 22px 35px 63px;

@@ -4806,9 +4806,10 @@ img {
 .hero1-background-image__one {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 5;
   background-repeat: no-repeat;
   background-size: cover;
+  left: 24%;
 }
 .hero1-background-image__one::before {
   content: "";
@@ -4823,17 +4824,17 @@ img {
   z-index: 1;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 35%;
 }
 .hero1-background-image__two::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--Main-color-Theme-Color, #F2D701);
   z-index: 1;
 }
 .hero1-content {
   position: relative;
-  z-index: 1;
+  z-index: 9;
 }
 .hero1-content__title {
   padding-bottom: 20px;

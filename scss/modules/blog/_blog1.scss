@@ -17,7 +17,7 @@
                 z-index: 5;
                 padding: 30px;
                 background: #FFF;
-                max-width: 380px;
+                max-width: 555px;
                 margin: -70px auto auto;
                 box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
                 border-radius: 8px;
@@ -70,8 +70,9 @@
         }
         &-two {
             display: flex;
-            border-radius: 20px;
-            background: #F9F9F9;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
             &:not(:last-child) {
                 margin-bottom: 24px;
             }
@@ -80,11 +81,12 @@
             }
     
             &__thumb {
-                border-radius: 20px 0px 0px 20px;
+                margin-right: -45px;
+                border-radius: 15px;
                 overflow: hidden;
                 flex: none;
                 img {
-                    border-radius: 20px 0px 0px 20px;
+                    border-radius: 15px;
                     width: 100%;
                 }
                 @include breakpoint (max-md) { 
@@ -92,7 +94,10 @@
                 }
             }
             &-content {
-                padding: 36px;
+                border-radius: 15px;
+                background: var(--Default-color-White-color, #FFF);
+                box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.08);
+                padding: 33px;
                 @include breakpoint (max-md) {
                     padding: 20px;
                 }
@@ -123,9 +128,9 @@
                     }
                 }
                 &__title{
-                    padding-bottom: 75px;
+                    padding-bottom: 40px;
                     @include breakpoint (max-md) {
-                        padding-bottom: 30px;
+                        padding-bottom: 20px;
                     }
                 }
                 &__link {

@@ -2700,52 +2700,25 @@ img {
   }
 }
 
-.fancy-box {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.fancy-box1 {
+  text-align: center;
+  margin-top: -35px;
 }
-@media (max-width: 449px) {
-  .fancy-box--col {
-    align-items: start;
-    flex-direction: column;
-  }
+.fancy-box1__item h6 {
+  color: var(--Text-color-Title-color, #16171A);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
 }
-.fancy-box__profile img {
-  border-radius: 100px;
-}
-.fancy-box__profile--img2 {
-  margin-left: -42px;
-}
-.fancy-box-content__value h5 {
-  color: var(--theme);
-  padding-bottom: 8px;
-}
-.fancy-box-content__title {
-  text-transform: uppercase;
-  padding-bottom: 8px;
-}
-.fancy-box-content__desc {
-  font-size: 16px;
-}
-
-.rating-box {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-@media (min-width: 1200px) {
-  .rating-box {
-    justify-content: end;
-  }
-}
-.rating__details {
-  text-align: start;
-}
-@media (min-width: 1200px) {
-  .rating__details {
-    text-align: end;
-  }
+.fancy-box1__item p {
+  color: var(--Text-Colour-Title-Colour, #373A3F);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
 }
 
 .progress-wrap:not(:last-child) {
@@ -5734,6 +5707,22 @@ img {
 }
 
 /* 9. Testimonial */
+.testimonial1 {
+  position: relative;
+  background: var(--BG-color-Smoke-BG-color-2, #ECF1F5);
+}
+.testimonial1-card {
+  padding: 20px;
+  border-radius: 50px;
+  border: 1px solid #3CA200;
+  background: var(--Default-color-White-color, #FFF);
+}
+.testimonial1-card-header {
+  background: var(--smoke2);
+  text-align: center;
+  border-radius: 25px;
+}
+
 /* 10. Contact */
 .contact1 {
   position: relative;

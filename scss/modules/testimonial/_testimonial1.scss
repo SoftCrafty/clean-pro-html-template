@@ -1,0 +1,22 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.testimonial1 {
+  position: relative;
+  background: var(--BG-color-Smoke-BG-color-2, #ECF1F5);
+  &-card {
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid #3CA200;
+    background: var(--Default-color-White-color, #FFF);
+
+    &-header {
+      background: $smoke2;
+      text-align: center;
+      border-radius: 25px;
+    }
+  }
+
+
+}
+  

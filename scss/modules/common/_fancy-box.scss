@@ -2,60 +2,29 @@
 @use '../../utilities' as *;
 
 
-.fancy-box {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-    &--col {
-        @include breakpoint (max-xsmall) {
-            align-items: start;
-            flex-direction: column;
+.fancy-box1 {
+    text-align: center;
+    margin-top: -35px;
+    &__item {
+        h6 {
+            color: var(--Text-color-Title-color, #16171A);
+            font-family: Raleway;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px; /* 150% */
+        }
+        p {
+            color: var(--Text-Colour-Title-Colour, #373A3F);
+            font-family: "DM Sans";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 171.429% */
         }
     }
-
-    &__profile {
-        img {
-            border-radius: 100px;
-        }
-        &--img2 {
-            margin-left: -42px;
-        }
-    }
-    &-content {
-        &__value {
-            h5 {
-                color: $theme-color;
-                padding-bottom: 8px;
-            }
-        }
-        &__title{
-            text-transform: uppercase;
-            padding-bottom: 8px;
-        }
-        &__desc {
-            font-size: 16px;
-        }
-
-    }   
 
 }
 
 
-// Rating
-.rating {
-    &-box {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        @include breakpoint (xl) {
-            justify-content: end;
-        }
-    }
-    &__details {
-        text-align: start;
-        @include breakpoint (xl) {
-            text-align: end;    
-        }
-    }    
-}
+

@@ -4799,31 +4799,36 @@ img {
 /* 3. Hero */
 .hero1 {
   position: relative;
-  padding: 120px 0 80px;
+  padding: 112px 0 212px;
+  margin-top: 106px;
   /* Swiper Pagination (Numbered) */
 }
-@media (min-width: 768px) {
-  .hero1 {
-    padding: 160px 0 112px;
-  }
-}
-@media (min-width: 1200px) {
-  .hero1 {
-    padding: 260px 0 192px;
-  }
-}
-.hero1-background-image {
+.hero1-background-image__one {
   position: absolute;
   inset: 0;
   z-index: 1;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero1-background-image::before {
+.hero1-background-image__one::before {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(270deg, rgba(255, 192, 0, 0) 0%, rgba(255, 192, 0, 0.12) 49%, #3CA200 100%);
+  z-index: 1;
+}
+.hero1-background-image__two {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero1-background-image__two::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--Main-color-Theme-Color, #F2D701);
   z-index: 1;
 }
 .hero1-content {

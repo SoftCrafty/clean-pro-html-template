@@ -4,26 +4,44 @@
 
 .hero1 {
     position: relative;
-    padding: 120px 0 80px;
-    @include breakpoint (md) {
-        padding: 160px 0 112px;
-    }
-    @include breakpoint (xl) {
-        padding: 260px 0 192px;
-    }
+    padding: 112px 0 212px;
+    margin-top: 106px;
+    // @include breakpoint (md) {
+    //     padding: 160px 0 112px;
+    // }
+    // @include breakpoint (xl) {
+    //     padding: 260px 0 192px;
+    // }
     &-background-image {
-        position: absolute;
-        inset: 0;
-        z-index: 1;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        &::before {
-            content: '';
+        &__one {
             position: absolute;
             inset: 0;
-            background: linear-gradient(270deg, rgba(255, 192, 0, 0.00) 0%, rgba(255, 192, 0, 0.12) 49%, #3CA200 100%);
             z-index: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(270deg, rgba(255, 192, 0, 0.00) 0%, rgba(255, 192, 0, 0.12) 49%, #3CA200 100%);
+                z-index: 1;
+            }
+        }
+        &__two {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: var(--Main-color-Theme-Color, #F2D701);
+                z-index: 1;
+            }
         }
     }    
     &-content {

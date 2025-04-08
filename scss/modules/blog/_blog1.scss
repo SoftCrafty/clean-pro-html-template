@@ -15,9 +15,9 @@
             }
             &-content {
                 position: relative;
-                z-index: 5;
+                z-index: 1;
                 padding: 30px;
-                max-width: 555px;
+                max-width: 565px;
                 margin: -206px auto auto;
                 border-radius: 20px 20px 0px 0px;
                 background: linear-gradient(180deg, #16171A 0%, #3CA200 100%);
@@ -25,10 +25,6 @@
                     padding: 20px;
                     margin: 0px auto auto;
                     max-width: none;
-                }
-                &__shape {
-                    position: absolute;
-                    bottom: 10%;
                 }
                 &-meta {
                     display: flex;
@@ -95,8 +91,16 @@
                     }
                 }
             }
+            &__shape {
+                position: absolute;
+                bottom: 7%;
+                left: 7%;
+                opacity: 0.12;
+                z-index: 9;
+            }
         }
         &-two {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -122,6 +126,7 @@
                 }
             }
             &-content {
+                position: relative;
                 border-radius: 15px;
                 background: var(--Default-color-White-color, #FFF);
                 box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.08);
@@ -180,6 +185,13 @@
                     }
                 }
             } 
+            &__shape {
+                position: absolute;
+                bottom: 11%;
+                right: 0;
+                opacity: 0.12;
+                z-index: 9;
+            }
         }
     }
 }

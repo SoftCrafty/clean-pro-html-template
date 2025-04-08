@@ -48,45 +48,54 @@
     &-content {
         position: relative;
         z-index: 9;
+        border-radius: 20px;
+        background: var(--White, #FFF);
+        padding: 60px;
+        &__subtitle {
+            color: var(--900, #0F1B24);
+            font-family: $paragraph-font2;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 1.28px;
+            text-transform: uppercase;  
+        }
         &__title { 
             padding-bottom: 20px;
-            h1 {
-                color: $white;
-                font-family: $title-font;
-                font-size: 50px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 60px; 
-                letter-spacing: -2px;
-                text-transform: uppercase;
-                
-                @include breakpoint (md) {
-                    font-size: 60px;
-                    line-height: 65px; 
-                }
-                @include breakpoint (lg) {
-                    font-size: 80px;
-                    line-height: 90px; 
-                }
-                @include breakpoint (xxl) {
-                    font-size: 100px;
-                    line-height: 106px; 
-                }
-            }
+            color: var(--900, #0F1B24);
+            font-family: Raleway;
+            font-size: 74px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 84px;
         } 
         &__desc {
             padding-right: 0px;
-            @include breakpoint (xxl) {
-                padding-right: 80px;
-            }
-            h4 {
-                color: $theme-color;
-                font-family: $body-font;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 32px; 
-                text-transform: none;
+            color: var(--800, #7E7E7E);
+            font-family: "DM Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; /* 162.5% */
+        }
+        &-cta {
+            &__btn {
+                display: inline-flex;
+                height: 56px;
+                padding: 16px 2px 16px 30px;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+                flex-shrink: 0;
+                border-radius: 999px;
+                border: 1px solid var(--Border-color-border-color1, #D8DDE1);
+
+                img {
+                    padding: 20px;
+                    border-radius: 999px;
+                    background: var(--Main-color-Theme-color-1, #3CA200);
+                }
             }
         }   
     }

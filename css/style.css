@@ -30,7 +30,7 @@ Description: CleanPro - Creative & Digital Agency Html Template
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Manrope:wght@100..800&family=Poppins:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 /*----------------------------------------------
     # All Variables here
 ----------------------------------------------*/
@@ -2134,6 +2134,11 @@ span {
     padding-top: 45px;
   }
 }
+.custom-flex {
+  display: flex;
+  gap: 30px;
+}
+
 .pt-128 {
   padding-top: 25px;
 }
@@ -2699,26 +2704,34 @@ img {
     height: 50px;
   }
 }
-
-.fancy-box1 {
-  text-align: center;
-  margin-top: -35px;
+.slider-btn .style2 {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 42px;
+  background: var(--black);
 }
-.fancy-box1__item h6 {
-  color: var(--Text-color-Title-color, #16171A);
-  font-family: Raleway;
+.slider-btn .style2 i {
+  color: var(--white);
   font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 30px; /* 150% */
 }
-.fancy-box1__item p {
-  color: var(--Text-Colour-Title-Colour, #373A3F);
-  font-family: "DM Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 171.429% */
+.slider-btn .style2.slider-next {
+  background: var(--yellow);
+}
+.slider-btn .style2 img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  max-width: fit-content;
+}
+@media (max-width: 575px) {
+  .slider-btn .style2 {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .progress-wrap:not(:last-child) {
@@ -5481,6 +5494,19 @@ img {
   text-transform: uppercase;
   margin-bottom: 12px;
 }
+.section-top__subtitle3 {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  color: var(--Main-color-Theme-Color, #F2D701);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
 .section-top__title {
   color: var(--Text-color-Title-color, #010F34);
   font-family: Raleway;
@@ -5536,13 +5562,40 @@ img {
     line-height: 40px;
   }
 }
+.section-top__title3 {
+  color: var(--Text-Colour-Title-Colour, #373A3F);
+  font-family: "Manrope", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px; /* 112.5% */
+  text-transform: capitalize;
+}
+@media (max-width: 1199px) {
+  .section-top__title3 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .section-top__title3 {
+    font-size: 42px;
+    line-height: 45px;
+  }
+}
+@media (max-width: 575px) {
+  .section-top__title3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
 .section-top__desc {
-  color: var(--title);
-  font-family: "DM Sans", sans-serif;
-  font-size: 18px;
+  color: var(--Text-Colour-Boby-Text, #696969);
+  font-family: "DM Sans";
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 26px; /* 162.5% */
 }
 .section-top__desc2 {
   color: var(--BG-color-Smoke-BG-color-1, #FAF8F7);
@@ -5554,7 +5607,12 @@ img {
   line-height: 26px; /* 162.5% */
 }
 .section-top__desc3 {
-  color: var(--title);
+  color: #000;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 185.714% */
 }
 
 /* 7. Service */
@@ -5711,16 +5769,132 @@ img {
   position: relative;
   background: var(--BG-color-Smoke-BG-color-2, #ECF1F5);
 }
-.testimonial1-card {
-  padding: 20px;
-  border-radius: 50px;
+.testimonial1-card-one {
+  max-width: 257px;
+  margin-left: -250px;
+  padding: 13px;
+  border-radius: 30px;
   border: 1px solid #3CA200;
   background: var(--Default-color-White-color, #FFF);
 }
-.testimonial1-card-header {
+.testimonial1-card-one-header {
+  padding: 0 25px;
   background: var(--smoke2);
   text-align: center;
   border-radius: 25px;
+}
+.testimonial1-card-one-header__icon {
+  padding-top: 12px;
+}
+.testimonial1-card-one-header__text {
+  padding-top: 26px;
+  padding-bottom: 70px;
+}
+.testimonial1-card-one .fancy-box1 {
+  text-align: center;
+  margin-top: -35px;
+  padding-bottom: 5px;
+}
+.testimonial1-card-one .fancy-box1__item h6 {
+  color: var(--Text-color-Title-color, #16171A);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  padding-top: 5px;
+}
+.testimonial1-card-one .fancy-box1__item p {
+  color: var(--Text-Colour-Title-Colour, #373A3F);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+.testimonial1-card-two {
+  max-width: 329px;
+  padding: 16px;
+  border-radius: 30px;
+  border: 1px solid #3CA200;
+  background: var(--Default-color-White-color, #FFF);
+}
+.testimonial1-card-two-header {
+  padding: 0 25px;
+  background: var(--smoke2);
+  text-align: center;
+  border-radius: 25px;
+}
+.testimonial1-card-two-header__icon {
+  padding-top: 14px;
+}
+.testimonial1-card-two-header__text {
+  padding-top: 32px;
+  padding-bottom: 85px;
+}
+.testimonial1-card-two .fancy-box2 {
+  text-align: center;
+  margin-top: -45px;
+  padding-bottom: 5px;
+}
+.testimonial1-card-two .fancy-box2__item h6 {
+  color: var(--Text-color-Title-color, #16171A);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  padding-top: 15px;
+}
+.testimonial1-card-two .fancy-box2__item p {
+  color: var(--Text-Colour-Title-Colour, #373A3F);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+.testimonial1-card-three {
+  max-width: 397px;
+  padding: 13px;
+  border-radius: 30px;
+  border: 1px solid #3CA200;
+  background: var(--Default-color-White-color, #FFF);
+}
+.testimonial1-card-three-header {
+  padding: 0 25px;
+  background: var(--smoke2);
+  text-align: center;
+  border-radius: 25px;
+}
+.testimonial1-card-three-header__icon {
+  padding-top: 12px;
+}
+.testimonial1-card-three-header__text {
+  padding-top: 26px;
+  padding-bottom: 70px;
+}
+.testimonial1-card-three .fancy-box1 {
+  text-align: center;
+  margin-top: -55px;
+  padding-bottom: 5px;
+}
+.testimonial1-card-three .fancy-box1__item h6 {
+  color: var(--Text-color-Title-color, #16171A);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  padding-top: 5px;
+}
+.testimonial1-card-three .fancy-box1__item p {
+  color: var(--Text-Colour-Title-Colour, #373A3F);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
 }
 
 /* 10. Contact */

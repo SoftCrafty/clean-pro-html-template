@@ -2,29 +2,7 @@
 @use '../../utilities' as *;
 
 
-.fancy-box1 {
-    text-align: center;
-    margin-top: -35px;
-    &__item {
-        h6 {
-            color: var(--Text-color-Title-color, #16171A);
-            font-family: Raleway;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 30px; /* 150% */
-        }
-        p {
-            color: var(--Text-Colour-Title-Colour, #373A3F);
-            font-family: "DM Sans";
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px; /* 171.429% */
-        }
-    }
 
-}
 
 
 

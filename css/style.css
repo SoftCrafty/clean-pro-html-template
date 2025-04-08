@@ -6002,6 +6002,7 @@ img {
 /* 11. Blog */
 .blog1-card-one {
   padding-bottom: 52px;
+  position: relative;
 }
 .blog1-card-one__thumb {
   border-radius: 20px;
@@ -6026,9 +6027,15 @@ img {
     max-width: none;
   }
 }
+.blog1-card-one-content__shape {
+  position: absolute;
+  bottom: 10%;
+}
 .blog1-card-one-content-meta {
   display: flex;
-  gap: 22px;
+  align-items: center;
+  display: flex;
+  gap: 17px;
   padding-bottom: 6px;
   color: var(--Default-color-White-color, #FFF);
   font-family: "DM Sans";
@@ -6045,6 +6052,11 @@ img {
 }
 .blog1-card-one-content-meta i {
   padding-right: 8px;
+}
+.blog1-card-one-content-meta__line {
+  width: 1px;
+  height: 14px;
+  background: #D8DDE1;
 }
 .blog1-card-one-content__title {
   padding-bottom: 15px;
@@ -6129,14 +6141,15 @@ img {
 }
 .blog1-card-two-content-meta {
   display: flex;
-  gap: 22px;
+  align-items: center;
+  gap: 14px;
   padding-bottom: 6px;
-  color: var(--title);
-  font-family: "DM Sans", sans-serif;
-  font-size: 16px;
+  color: var(--Text-color-Body-text-color, #727272);
+  font-family: "DM Sans";
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
+  font-weight: 700;
+  line-height: 24px;
 }
 @media (max-width: 499px) {
   .blog1-card-two-content-meta {
@@ -6146,8 +6159,20 @@ img {
 }
 .blog1-card-two-content-meta i {
   padding-right: 8px;
+  color: var(--theme);
+}
+.blog1-card-two-content-meta__line {
+  width: 1px;
+  height: 14px;
+  background: #D8DDE1;
 }
 .blog1-card-two-content__title {
+  color: var(--Text-Colour-Title-Colour, #373A3F);
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px; /* 141.667% */
   padding-bottom: 40px;
 }
 @media (max-width: 767px) {
@@ -6156,15 +6181,17 @@ img {
   }
 }
 .blog1-card-two-content__link {
-  color: var(--theme);
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  color: var(--Main-color-Theme-color-1, #3CA200);
+  font-family: "DM Sans";
+  font-size: 14px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: -0.32px;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
   text-transform: uppercase;
-  text-decoration: underline;
+}
+.blog1-card-two-content__link img {
+  padding-left: 10px;
 }
 
 /* 12. Pricing */

@@ -5,6 +5,7 @@
     &-card {
         &-one {            
             padding-bottom: 52px;
+            position: relative;
             &__thumb {
                 border-radius: 20px;
                 img {
@@ -25,22 +26,33 @@
                     margin: 0px auto auto;
                     max-width: none;
                 }
+                &__shape {
+                    position: absolute;
+                    bottom: 10%;
+                }
                 &-meta {
                     display: flex;
-                    gap: 22px;
+                    align-items: center;
+                    display: flex;
+                    gap: 17px;
                     padding-bottom: 6px;
                     color: var(--Default-color-White-color, #FFF);
                     font-family: "DM Sans";
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 700;
-                    line-height: 24px; 
+                    line-height: 24px;
                     @include breakpoint (max-xs) {
                         flex-wrap: wrap;
                         row-gap: 10px;
                     }
                     i {
                         padding-right: 8px;
+                    }
+                    &__line {
+                        width: 1px;
+                        height: 14px;
+                        background: #D8DDE1;
                     }
                 }
                 &__title{
@@ -119,38 +131,53 @@
                 }
                 &-meta {
                     display: flex;
-                    gap: 22px;
+                    align-items: center;
+                    gap: 14px;
                     padding-bottom: 6px;
-                    color: $title-color;
-                    font-family: $body-font;
-                    font-size: 16px;
+                    color: var(--Text-color-Body-text-color, #727272);
+                    font-family: "DM Sans";
+                    font-size: 14px;
                     font-style: normal;
-                    font-weight: 400;
-                    line-height: 26px;
+                    font-weight: 700;
+                    line-height: 24px; 
                     @include breakpoint (max-xs) {
                         flex-wrap: wrap;
                         row-gap: 10px;
                     }
                     i {
                         padding-right: 8px;
+                        color: $theme-color;
+                    }
+                    &__line {
+                        width: 1px;
+                        height: 14px;
+                        background: #D8DDE1;
                     }
                 }
                 &__title{
+                    color: var(--Text-Colour-Title-Colour, #373A3F);
+                    font-family: Raleway;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 34px; /* 141.667% */
                     padding-bottom: 40px;
                     @include breakpoint (max-md) {
                         padding-bottom: 20px;
                     }
                 }
                 &__link {
-                    color: $theme-color;
-                    font-family: $title-font;
-                    font-size: 16px;
+                    color: var(--Main-color-Theme-color-1, #3CA200);
+                    font-family: "DM Sans";
+                    font-size: 14px;
                     font-style: normal;
-                    font-weight: 600;
-                    line-height: 20px; 
-                    letter-spacing: -0.32px;
+                    font-weight: 700;
+                    line-height: 24px; /* 171.429% */
+                    letter-spacing: 0.42px;
                     text-transform: uppercase;
-                    text-decoration: underline;
+                    img {
+                        padding-left: 10px;
+                    }
                 }
             } 
         }

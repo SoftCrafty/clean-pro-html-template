@@ -3,68 +3,143 @@
 
 .blog1 {
     &-card {
-        padding-bottom: 52px;
-        &__thumb {
-            border-radius: 20px;
-            img {
+        &-one {            
+            padding-bottom: 52px;
+            &__thumb {
                 border-radius: 20px;
-                width: 100%;
+                img {
+                    border-radius: 20px;
+                    width: 100%;
+                }
+            }
+            &-content {
+                position: relative;
+                z-index: 5;
+                padding: 30px;
+                background: #FFF;
+                max-width: 380px;
+                margin: -70px auto auto;
+                box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
+                border-radius: 8px;
+                @include breakpoint (max-lg) {
+                    padding: 20px;
+                    margin: 0px auto auto;
+                    max-width: none;
+                }
+                &-meta {
+                    display: flex;
+                    gap: 22px;
+                    padding-bottom: 6px;
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                    @include breakpoint (max-xs) {
+                        flex-wrap: wrap;
+                        row-gap: 10px;
+                    }
+                    i {
+                        padding-right: 8px;
+                    }
+                }
+                &__title{
+                    padding-bottom: 15px;
+                    color: $title-color;
+                    font-family: $title-font;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 34px;
+                    letter-spacing: -0.56px;
+                    text-transform: uppercase;
+                
+                    @include breakpoint(max-xl) {
+                        font-size: 20px;
+                    }
+                
+                    @include breakpoint (max-md) {
+                        font-size: 18px;
+                    } 
+                }
+                &__desc {
+                    padding-right: 5px;                
+                }
             }
         }
-        &-content {
-            position: relative;
-            z-index: 5;
-            padding: 30px;
-            background: #FFF;
-            max-width: 380px;
-            margin: -70px auto auto;
-            box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
-            border-radius: 8px;
-            @include breakpoint (max-lg) {
-                padding: 20px;
-                margin: 0px auto auto;
-                max-width: none;
+        &-two {
+            display: flex;
+            border-radius: 20px;
+            background: #F9F9F9;
+            &:not(:last-child) {
+                margin-bottom: 24px;
             }
-            &-meta {
-                display: flex;
-                gap: 22px;
-                padding-bottom: 6px;
-                color: $title-color;
-                font-family: $body-font;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 26px;
-                @include breakpoint (max-xs) {
-                    flex-wrap: wrap;
-                    row-gap: 10px;
+            @include breakpoint (max-md) {
+               flex-direction: column;
+            }
+    
+            &__thumb {
+                border-radius: 20px 0px 0px 20px;
+                overflow: hidden;
+                flex: none;
+                img {
+                    border-radius: 20px 0px 0px 20px;
+                    width: 100%;
                 }
-                i {
-                    padding-right: 8px;
+                @include breakpoint (max-md) { 
+                border-radius: 20px;
                 }
             }
-            &__title{
-                padding-bottom: 15px;
-                color: $title-color;
-                font-family: $title-font;
-                font-size: 22px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 34px;
-                letter-spacing: -0.56px;
-                text-transform: uppercase;
-            
-                @include breakpoint(max-xl) {
-                    font-size: 20px;
-                }
-            
+            &-content {
+                padding: 36px;
                 @include breakpoint (max-md) {
-                    font-size: 18px;
-                } 
-            }
-            &__desc {
-                padding-right: 5px;                
-            }
+                    padding: 20px;
+                }
+                &-meta {
+                    display: flex;
+                    gap: 12px;
+                    padding-bottom: 7px;
+    
+                    &__date {
+                        color: $title-color;
+                        font-family: $body-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px;
+                    }
+                    &__dot {
+                        width: 4px;
+                        height: 4px;
+                    }
+                    &__category {
+                        color: $title-color;
+                        font-family: $body-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px;
+                    }
+                }
+                &__title{
+                    padding-bottom: 75px;
+                    @include breakpoint (max-md) {
+                        padding-bottom: 30px;
+                    }
+                }
+                &__link {
+                    color: $theme-color;
+                    font-family: $title-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 20px; 
+                    letter-spacing: -0.32px;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                }
+            } 
         }
     }
 }

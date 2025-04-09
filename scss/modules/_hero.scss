@@ -6,6 +6,12 @@
     position: relative;
     padding: 205px 0 210px;
     margin-top: 107px;
+    @include breakpoint (max-xl) {
+        margin-bottom: 0px;
+    }
+    @include breakpoint (max-lg) {
+        padding: 150px 0 150px;
+    }
     &-background-image {
         &__one {
             position: absolute;
@@ -47,6 +53,14 @@
         padding: 60px 100px 66px 60px;
         margin-left: 46px;
         margin-right: 77px;
+        @include breakpoint (max-lg) {
+            padding: 60px;
+        }
+        @include breakpoint (max-md) {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 30px;
+        }
         &__subtitle {
             color: var(--900, #0F1B24);
             font-family: $paragraph-font2;
@@ -73,6 +87,15 @@
             }
             @include breakpoint (max-lg) {
                 font-size: 58px;
+                line-height: 70px;
+            }
+            @include breakpoint (max-md) {
+                font-size: 45px;
+                line-height: 50px;
+            }
+            @include breakpoint (max-sm) {
+                font-size: 42px;
+                line-height: 50px;
             }
         } 
         &__desc {
@@ -88,6 +111,11 @@
             display: flex;
             align-items: center;
             gap: 50px;
+            @include breakpoint (max-xs){
+                flex-direction: column;
+                align-items: self-start;
+                gap: 25px;
+            }
             &__btn {
                 display: inline-flex;
                 height: 56px;

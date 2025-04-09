@@ -4802,6 +4802,16 @@ img {
   padding: 205px 0 210px;
   margin-top: 107px;
 }
+@media (max-width: 1199px) {
+  .hero1 {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .hero1 {
+    padding: 150px 0 150px;
+  }
+}
 .hero1-background-image__one {
   position: absolute;
   inset: 0;
@@ -4840,6 +4850,18 @@ img {
   margin-left: 46px;
   margin-right: 77px;
 }
+@media (max-width: 991px) {
+  .hero1-content {
+    padding: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .hero1-content {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 30px;
+  }
+}
 .hero1-content__subtitle {
   color: var(--900, #0F1B24);
   font-family: "Outfit", sans-serif;
@@ -4868,6 +4890,19 @@ img {
 @media (max-width: 991px) {
   .hero1-content__title {
     font-size: 58px;
+    line-height: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .hero1-content__title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 575px) {
+  .hero1-content__title {
+    font-size: 42px;
+    line-height: 50px;
   }
 }
 .hero1-content__desc {
@@ -4883,6 +4918,13 @@ img {
   display: flex;
   align-items: center;
   gap: 50px;
+}
+@media (max-width: 499px) {
+  .hero1-content-cta {
+    flex-direction: column;
+    align-items: self-start;
+    gap: 25px;
+  }
 }
 .hero1-content-cta__btn {
   display: inline-flex;

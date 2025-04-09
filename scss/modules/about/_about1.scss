@@ -3,9 +3,9 @@
 
 .about1 {
     &-content {
-        border-radius: 10px;
-        background: var(--BG-color-Smoke-BG-color-2, #ECF1F5);
-        padding: 65px 60px;
+        // border-radius: 10px;
+        // background: var(--BG-color-Smoke-BG-color-2, #ECF1F5);
+        // padding: 65px 60px;
         &-btn {
             display: inline-table;
             color: var(--Text-color-Title-color, #16171A);
@@ -51,7 +51,7 @@
         &-info {
             padding-top: 40px;
             display: flex;
-            gap: 50px;
+            gap: 30px;
             &-left {
                 padding-top: 10px;
                 &__icon {
@@ -101,6 +101,7 @@
             }
             &__verticalLine {
                 padding-top: 5px;
+                padding-right: 20px;
             }
             &-right {
                 &-list {
@@ -134,11 +135,35 @@
                 &-profile {
                     display: flex;
                     gap: 14px;
+                    padding-top: 24px;
                     &__img {
                         padding-top: 15px;
                     }
                 }
             }
+        }
+    }
+    &-thumb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &__top {
+            margin-bottom: -77px;
+        }
+        &-middle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &__left {
+
+            }
+            &__right {
+
+            }
+        }
+        &__bottom {
+            margin-top: -77px;
         }
     }
 }

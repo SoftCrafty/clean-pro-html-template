@@ -19,11 +19,8 @@
             position: relative;
             z-index: 9;
             padding: 45px 50px 50px;
-            @include breakpoint (max-xsmall){
-                padding: 20px 17px 76px;
-            }
-            // @include breakpoint (max-xxsmall){
-            //     padding: 25px 18px 76px;
+            // @include breakpoint (max-xsmall){
+            //     padding: 20px 17px 76px;
             // }
             &__title {
                 padding-bottom: 10px;
@@ -38,9 +35,12 @@
             }
             &__desc {
                 padding-bottom: 27px;
-                @include breakpoint (max-xsmall){
-                    padding-bottom: 7px;
+                @include breakpoint (max-sm){
+                    max-width: 400px;
                 }
+                // @include breakpoint (max-xsmall){
+                //     padding-bottom: 7px;
+                // }
                 p {
                     color: var(--Text-Colour-Boby-Text, #696969);
                     font-family: "DM Sans";
@@ -52,9 +52,9 @@
             }
             &__btn {
                 margin-top: 30px;
-                @include breakpoint (max-xsmall){
-                    margin-top: 10px;
-                }
+                // @include breakpoint (max-xsmall){
+                //     margin-top: 10px;
+                // }
                 span {
                     padding: 18px 110px;
                     border-radius: 8px;
@@ -70,10 +70,10 @@
                     @include breakpoint (max-xxxl) {
                         padding: 18px 105px;
                     }
-                    @include breakpoint (max-xsmall){
-                        padding: 18px 80px;
+                    // @include breakpoint (max-xsmall){
+                    //     padding: 18px 80px;
 
-                    }
+                    // }
                 }
             }            
         }
@@ -104,6 +104,33 @@
                 font-style: normal;
                 font-weight: 600;
                 line-height: 34px; /* 141.667% */
+            }
+        }
+        &:hover {
+            .pricing1 {
+                &-card {
+                    &-shape1 {
+                        svg path {
+                            stroke: $theme-color;
+                            @include transition;
+                        }
+                    }
+                    &-shape2 {
+                        svg path {
+                            fill: $theme-color;
+                            @include transition;
+                        }
+                    }
+                    &-content {
+                        &__btn {
+                            span {
+                                border: 1px solid #3CA200;
+                                color: var(--Main-color-Theme-color-1, #3CA200);
+                                @include transition;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

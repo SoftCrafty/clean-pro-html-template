@@ -5886,11 +5886,6 @@ img {
   z-index: 9;
   padding: 45px 50px 50px;
 }
-@media (max-width: 449px) {
-  .pricing1-card-content {
-    padding: 20px 17px 76px;
-  }
-}
 .pricing1-card-content__title {
   padding-bottom: 10px;
 }
@@ -5905,9 +5900,9 @@ img {
 .pricing1-card-content__desc {
   padding-bottom: 27px;
 }
-@media (max-width: 449px) {
+@media (max-width: 575px) {
   .pricing1-card-content__desc {
-    padding-bottom: 7px;
+    max-width: 400px;
   }
 }
 .pricing1-card-content__desc p {
@@ -5920,11 +5915,6 @@ img {
 }
 .pricing1-card-content__btn {
   margin-top: 30px;
-}
-@media (max-width: 449px) {
-  .pricing1-card-content__btn {
-    margin-top: 10px;
-  }
 }
 .pricing1-card-content__btn span {
   padding: 18px 110px;
@@ -5942,11 +5932,6 @@ img {
 @media (max-width: 1599px) {
   .pricing1-card-content__btn span {
     padding: 18px 105px;
-  }
-}
-@media (max-width: 449px) {
-  .pricing1-card-content__btn span {
-    padding: 18px 80px;
   }
 }
 .pricing1-card-value {
@@ -5977,6 +5962,19 @@ img {
   font-style: normal;
   font-weight: 600;
   line-height: 34px; /* 141.667% */
+}
+.pricing1-card:hover .pricing1-card-shape1 svg path {
+  stroke: var(--theme);
+  transition: all 0.4s ease-in-out;
+}
+.pricing1-card:hover .pricing1-card-shape2 svg path {
+  fill: var(--theme);
+  transition: all 0.4s ease-in-out;
+}
+.pricing1-card:hover .pricing1-card-content__btn span {
+  border: 1px solid #3CA200;
+  color: var(--Main-color-Theme-color-1, #3CA200);
+  transition: all 0.4s ease-in-out;
 }
 
 /* 13. WCU */

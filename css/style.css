@@ -4940,6 +4940,136 @@ img {
 }
 
 /* 4. About */
+.about1-content {
+  border-radius: 10px;
+  background: var(--BG-color-Smoke-BG-color-2, #ECF1F5);
+  padding: 65px 60px;
+}
+.about1-content-btn {
+  display: inline-table;
+  color: var(--Text-color-Title-color, #16171A);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 155.556% */
+}
+.about1-content-btn__one {
+  display: inline-flex;
+  padding: 20px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 2px;
+  background: var(--Default-color-White-color, #FFF);
+}
+.about1-content-btn__two {
+  display: inline-flex;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 2px;
+  background: var(--Main-color-Theme-color-1, #3CA200);
+  color: var(--Default-color-White-color, #FFF);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 155.556% */
+}
+.about1-content-btn__three {
+  display: inline-flex;
+  padding: 20px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 2px;
+  background: var(--Default-color-White-color, #FFF);
+}
+.about1-content-info {
+  padding-top: 40px;
+  display: flex;
+  gap: 50px;
+}
+.about1-content-info-left {
+  padding-top: 10px;
+}
+.about1-content-info-left__icon {
+  padding-bottom: 20px;
+}
+.about1-content-info-left__title {
+  padding-bottom: 27px;
+  max-width: 128px;
+}
+.about1-content-info-left__title h6 {
+  color: #000;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px; /* 141.667% */
+}
+.about1-content-info-left__link {
+  color: var(--Text-color-Title-color, #16171A);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  padding-bottom: 36px;
+}
+.about1-content-info-left__rating h6 {
+  color: #000;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px; /* 141.667% */
+}
+.about1-content-info-left__rating p {
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+.about1-content-info__verticalLine {
+  padding-top: 5px;
+}
+.about1-content-info-right-list {
+  padding-bottom: 23px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.about1-content-info-right-list-item__title {
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+.about1-content-info-right-list-item__text {
+  color: var(--Text-color-Body-text-color, #727272);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.about1-content-info-right-profile {
+  display: flex;
+  gap: 14px;
+}
+.about1-content-info-right-profile__img {
+  padding-top: 15px;
+}
+
 /* 5. Meanmenu */
 /*----------------------------------------------
     # Meanmenu style here

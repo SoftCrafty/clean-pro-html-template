@@ -1,3 +1,144 @@
 @use '../../root' as *;
 @use '../../utilities' as *;
 
+.about1 {
+    &-content {
+        border-radius: 10px;
+        background: var(--BG-color-Smoke-BG-color-2, #ECF1F5);
+        padding: 65px 60px;
+        &-btn {
+            display: inline-table;
+            color: var(--Text-color-Title-color, #16171A);
+            font-family: Raleway;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px; /* 155.556% */
+            &__one {
+                display: inline-flex;
+                padding: 20px 25px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px; 
+                border-radius: 2px;
+                background: var(--Default-color-White-color, #FFF);
+            }
+            &__two {
+                display: inline-flex;
+                padding: 25px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 2px;
+                background: var(--Main-color-Theme-color-1, #3CA200);
+                color: var(--Default-color-White-color, #FFF);
+                font-family: Raleway;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px; /* 155.556% */
+            }
+            &__three {
+                display: inline-flex;
+                padding: 20px 25px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px; 
+                border-radius: 2px;
+                background: var(--Default-color-White-color, #FFF);
+            }
+        }
+        &-info {
+            padding-top: 40px;
+            display: flex;
+            gap: 50px;
+            &-left {
+                padding-top: 10px;
+                &__icon {
+                    padding-bottom: 20px;
+                }
+                &__title {
+                    padding-bottom: 27px;
+                    max-width: 128px;
+                    h6 {
+                        color: #000;
+                        font-family: Raleway;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 34px; /* 141.667% */
+                    }
+                }
+                &__link {
+                    color: var(--Text-color-Title-color, #16171A);
+                    font-family: "DM Sans";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px; /* 171.429% */
+                    letter-spacing: 0.42px;
+                    text-transform: uppercase;
+                    padding-bottom: 36px;
+                }
+                &__rating {
+                    h6 {
+                        color: #000;
+                        font-family: Raleway;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 34px; /* 141.667% */                        
+                    }
+                    p {
+                        color: #000;
+                        font-family: "DM Sans";
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px; /* 171.429% */                        
+                    }
+                }
+            }
+            &__verticalLine {
+                padding-top: 5px;
+            }
+            &-right {
+                &-list {
+                    padding-bottom: 23px;
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+
+                    &-item {
+                        &__icon {
+                            
+                        }
+                        &__title {
+                            color: #000;
+                            font-family: Raleway;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 30px; 
+                        }
+                        &__text {
+                            color: var(--Text-color-Body-text-color, #727272);
+                            font-family: "DM Sans";
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px; 
+                        }
+                    }
+                }
+                &-profile {
+                    display: flex;
+                    gap: 14px;
+                    &__img {
+                        padding-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

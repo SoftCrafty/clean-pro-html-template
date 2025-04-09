@@ -19,6 +19,12 @@
             position: relative;
             z-index: 9;
             padding: 45px 50px 50px;
+            @include breakpoint (max-xsmall){
+                padding: 20px 17px 76px;
+            }
+            // @include breakpoint (max-xxsmall){
+            //     padding: 25px 18px 76px;
+            // }
             &__title {
                 padding-bottom: 10px;
                 h5 {
@@ -32,6 +38,9 @@
             }
             &__desc {
                 padding-bottom: 27px;
+                @include breakpoint (max-xsmall){
+                    padding-bottom: 7px;
+                }
                 p {
                     color: var(--Text-Colour-Boby-Text, #696969);
                     font-family: "DM Sans";
@@ -43,10 +52,13 @@
             }
             &__btn {
                 margin-top: 30px;
+                @include breakpoint (max-xsmall){
+                    margin-top: 10px;
+                }
                 span {
+                    padding: 18px 110px;
                     border-radius: 8px;
                     border: 1px solid var(--Border-color-border-color1, #D8DDE1);
-                    padding: 18px 110px;
                     text-align: center;
                     color: var(--Text-color-Body-text-color, #727272);
                     font-family: "DM Sans";
@@ -55,8 +67,15 @@
                     font-weight: 700;
                     line-height: 24px; /* 171.429% */
                     text-transform: uppercase;
+                    @include breakpoint (max-xxxl) {
+                        padding: 18px 105px;
+                    }
+                    @include breakpoint (max-xsmall){
+                        padding: 18px 80px;
+
+                    }
                 }
-            }
+            }            
         }
         &-value {
             position: relative;

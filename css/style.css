@@ -4948,23 +4948,49 @@ img {
 .about1 {
   position: relative;
 }
-.about1 .custom-shape {
-  position: relative;
-  z-index: 1;
-}
 .about1-shape1 {
   position: absolute;
-}
-.about1-shape1 img {
-  position: absolute;
-  right: 0;
-  top: 0;
+  right: 13.7%;
+  bottom: 0;
   z-index: 5;
+}
+@media (max-width: 1599px) {
+  .about1-shape1 {
+    right: 41px;
+  }
+}
+@media (max-width: 1399px) {
+  .about1-shape1 {
+    right: 31px;
+  }
+}
+@media (max-width: 1199px) {
+  .about1-shape1 {
+    display: none;
+  }
 }
 .about1-content {
   padding: 71px 60px;
   position: relative;
-  z-index: 1;
+  z-index: 7;
+}
+@media (max-width: 1399px) {
+  .about1-content {
+    padding: 71px 30px;
+  }
+}
+@media (max-width: 1199px) {
+  .about1-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 991px) {
+  .about1-content {
+    padding: 45px 10px;
+  }
 }
 .about1-content-btn {
   display: inline-table;
@@ -4984,6 +5010,11 @@ img {
   border-radius: 2px;
   background: var(--Default-color-White-color, #FFF);
 }
+@media (max-width: 991px) {
+  .about1-content-btn__one {
+    padding: 20px 15px;
+  }
+}
 .about1-content-btn__two {
   display: inline-flex;
   padding: 25px;
@@ -4999,6 +5030,11 @@ img {
   font-weight: 600;
   line-height: 28px; /* 155.556% */
 }
+@media (max-width: 991px) {
+  .about1-content-btn__two {
+    padding: 25px 15px;
+  }
+}
 .about1-content-btn__three {
   display: inline-flex;
   padding: 20px 25px;
@@ -5008,10 +5044,28 @@ img {
   border-radius: 2px;
   background: var(--Default-color-White-color, #FFF);
 }
+@media (max-width: 991px) {
+  .about1-content-btn__three {
+    padding: 20px 15px;
+  }
+}
 .about1-content-info {
   padding-top: 40px;
   display: flex;
   gap: 30px;
+}
+@media (max-width: 1199px) {
+  .about1-content-info {
+    padding-top: 40px;
+    display: flex;
+    gap: 65px;
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .about1-content-info {
+    gap: 35px;
+  }
 }
 .about1-content-info-left {
   padding-top: 10px;
@@ -5083,6 +5137,7 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  max-width: 270px;
 }
 .about1-content-info-right-profile {
   display: flex;
@@ -5100,6 +5155,16 @@ img {
   justify-content: center;
   flex-direction: column;
   margin-left: -170px;
+}
+@media (max-width: 1399px) {
+  .about1-thumb {
+    margin-left: -212px;
+  }
+}
+@media (max-width: 1199px) {
+  .about1-thumb {
+    display: none;
+  }
 }
 .about1-thumb__top {
   margin-bottom: -77px;

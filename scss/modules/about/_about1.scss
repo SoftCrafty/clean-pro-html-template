@@ -3,23 +3,38 @@
 
 .about1 {
     position: relative;
-    .custom-shape {
-        position: relative;
-        z-index: 1;
-    }
     &-shape1 {
         position: absolute;
-        img {
-            position: absolute;
-            right: 0;
-            top: 0;
-            z-index: 5;
+        right: 13.7%;
+        bottom: 0;
+        z-index: 5;
+
+        @include breakpoint (max-xxxl) {
+            right: 41px;
+        }
+        @include breakpoint (max-xxl) {
+            right: 31px;
+        }
+        @include breakpoint (max-xl) {
+            display: none;
         }
     }
     &-content {
             padding: 71px 60px;
             position: relative;
-            z-index: 1;
+            z-index: 7;
+            @include breakpoint (max-xxl) {
+                padding: 71px 30px;
+            }
+            @include breakpoint (max-xl) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            @include breakpoint (max-lg) {
+                padding: 45px 10px;
+            }
 
         &-btn {
             display: inline-table;
@@ -37,6 +52,9 @@
                 gap: 10px; 
                 border-radius: 2px;
                 background: var(--Default-color-White-color, #FFF);
+                @include breakpoint (max-lg){
+                    padding: 20px 15px;
+                }
             }
             &__two {
                 display: inline-flex;
@@ -52,6 +70,9 @@
                 font-style: normal;
                 font-weight: 600;
                 line-height: 28px; /* 155.556% */
+                @include breakpoint (max-lg){
+                    padding: 25px 15px;
+                }
             }
             &__three {
                 display: inline-flex;
@@ -61,12 +82,24 @@
                 gap: 10px; 
                 border-radius: 2px;
                 background: var(--Default-color-White-color, #FFF);
+                @include breakpoint (max-lg){
+                    padding: 20px 15px;
+                }
             }
         }
         &-info {
             padding-top: 40px;
             display: flex;
             gap: 30px;
+            @include breakpoint(max-xl){
+                padding-top: 40px;
+                display: flex;
+                gap: 65px;
+                justify-content: center;
+            }
+            @include breakpoint(max-md){
+                gap: 35px;
+            }
             &-left {
                 padding-top: 10px;
                 &__icon {
@@ -144,6 +177,7 @@
                             font-style: normal;
                             font-weight: 400;
                             line-height: 24px; 
+                            max-width: 270px;
                         }
                     }
                 }
@@ -166,6 +200,12 @@
         justify-content: center;
         flex-direction: column;
         margin-left: -170px;
+        @include breakpoint (max-xxl){
+            margin-left: -212px;
+        }
+        @include breakpoint (max-xl){
+            display: none;
+        }
         &__top {
             margin-bottom: -77px;
         }

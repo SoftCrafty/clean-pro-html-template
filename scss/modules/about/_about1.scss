@@ -2,10 +2,28 @@
 @use '../../utilities' as *;
 
 .about1 {
+    position: relative;
+    .custom-shape {
+        position: relative;
+        z-index: 1;
+    }
+    &-shape1 {
+        position: absolute;
+        img {
+            position: absolute;
+            right: 0;
+            top: -51px;
+            z-index: 5;
+        }
+    }
     &-content {
         // border-radius: 10px;
         // background: var(--BG-color-Smoke-BG-color-2, #ECF1F5);
         // padding: 65px 60px;
+            padding: 45px 60px;
+            position: relative;
+            z-index: 1;
+
         &-btn {
             display: inline-table;
             color: var(--Text-color-Title-color, #16171A);
@@ -144,6 +162,8 @@
         }
     }
     &-thumb {
+        position: relative;
+        z-index: 9;
         display: flex;
         align-items: center;
         justify-content: center;

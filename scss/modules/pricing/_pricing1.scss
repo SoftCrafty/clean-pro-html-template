@@ -2,7 +2,58 @@
 @use '../../utilities' as *;
 
 .pricing1 {
+    position: relative;
     &-card {
-        
+        position: relative;
+        &-shape1 {
+            position: absolute;
+            z-index: 1;
+        }
+        &-shape2 {
+
+        }
+        &-content {
+            position: relative;
+            z-index: 9;
+            padding: 45px 50px 50px;
+            &__title {
+                padding-bottom: 10px;
+                h5 {
+                    color: var(--Text-Colour-Title-Colour, #373A3F);
+                    font-family: Raleway;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;   
+                    line-height: 40px; /* 133.333% */
+                }
+            }
+            &__desc {
+                padding-bottom: 27px;
+                p {
+                    color: var(--Text-Colour-Boby-Text, #696969);
+                    font-family: "DM Sans";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px; /* 162.5% */
+                }
+            }
+            &__btn {
+                margin-top: 30px;
+                span {
+                    border-radius: 8px;
+                    border: 1px solid var(--Border-color-border-color1, #D8DDE1);
+                    padding: 18px 110px;
+                    text-align: center;
+                    color: var(--Text-color-Body-text-color, #727272);
+                    font-family: "DM Sans";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px; /* 171.429% */
+                    text-transform: uppercase;
+                }
+            }
+        }
     }
 }

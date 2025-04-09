@@ -113,26 +113,24 @@ img {
   
   // Check list
   .checklist {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    &-item {
-      display: flex;
-      align-items: center;
-      &:not(:last-child) {
-        margin-bottom: 10px;
-    }
-      &__icon {
-        padding-right: 8px;
-      }
-      &__text {
-        color: $title-color;
-        font-family: $body-font;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 30px;
-      }
+    &.style1 {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        padding-bottom: 8px;
+        img {
+          padding-right: 3px;
+        }
+        span {
+          color: var(--Text-Colour-Boby-Text, #696969);
+          font-family: "DM Sans";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px;
+        }
+      }    
     }
   }
   

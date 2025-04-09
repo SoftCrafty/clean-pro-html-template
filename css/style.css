@@ -2491,28 +2491,24 @@ img {
   text-align: right;
 }
 
-.checklist {
+.checklist.style1 {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.checklist-item {
-  display: flex;
-  align-items: center;
+.checklist.style1 li {
+  padding-bottom: 8px;
 }
-.checklist-item:not(:last-child) {
-  margin-bottom: 10px;
+.checklist.style1 li img {
+  padding-right: 3px;
 }
-.checklist-item__icon {
-  padding-right: 8px;
-}
-.checklist-item__text {
-  color: var(--title);
-  font-family: "DM Sans", sans-serif;
-  font-size: 18px;
+.checklist.style1 li span {
+  color: var(--Text-Colour-Boby-Text, #696969);
+  font-family: "DM Sans";
+  font-size: 16px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .map-container {
@@ -5869,6 +5865,60 @@ img {
 }
 
 /* 12. Pricing */
+.pricing1 {
+  position: relative;
+}
+.pricing1-card {
+  position: relative;
+}
+.pricing1-card-shape1 {
+  position: absolute;
+  z-index: 1;
+}
+.pricing1-card-content {
+  position: relative;
+  z-index: 9;
+  padding: 45px 50px 50px;
+}
+.pricing1-card-content__title {
+  padding-bottom: 10px;
+}
+.pricing1-card-content__title h5 {
+  color: var(--Text-Colour-Title-Colour, #373A3F);
+  font-family: Raleway;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 133.333% */
+}
+.pricing1-card-content__desc {
+  padding-bottom: 27px;
+}
+.pricing1-card-content__desc p {
+  color: var(--Text-Colour-Boby-Text, #696969);
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.pricing1-card-content__btn {
+  margin-top: 30px;
+}
+.pricing1-card-content__btn span {
+  border-radius: 8px;
+  border: 1px solid var(--Border-color-border-color1, #D8DDE1);
+  padding: 18px 110px;
+  text-align: center;
+  color: var(--Text-color-Body-text-color, #727272);
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  text-transform: uppercase;
+}
+
 /* 13. WCU */
 .choose1 {
   position: relative;

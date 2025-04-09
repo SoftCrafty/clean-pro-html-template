@@ -5875,6 +5875,12 @@ img {
   position: absolute;
   z-index: 1;
 }
+.pricing1-card-shape2 {
+  position: absolute;
+  z-index: 1;
+  bottom: -20px;
+  left: 8px;
+}
 .pricing1-card-content {
   position: relative;
   z-index: 9;
@@ -5917,6 +5923,35 @@ img {
   font-weight: 700;
   line-height: 24px; /* 171.429% */
   text-transform: uppercase;
+}
+.pricing1-card-value {
+  position: relative;
+  z-index: 9;
+  left: 12px;
+  padding: 28px 23px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--white);
+}
+.pricing1-card-value__dolar {
+  color: var(--Main-color-Theme-color-1, #3CA200);
+  font-family: Raleway;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px; /* 127.778% */
+}
+.pricing1-card-value__month {
+  color: var(--Text-color-Title-color, #16171A);
+  text-align: center;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px; /* 141.667% */
 }
 
 /* 13. WCU */

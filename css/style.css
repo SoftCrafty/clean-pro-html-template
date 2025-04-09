@@ -4958,11 +4958,11 @@ img {
 .about1-shape1 img {
   position: absolute;
   right: 0;
-  top: -51px;
+  top: 0;
   z-index: 5;
 }
 .about1-content {
-  padding: 45px 60px;
+  padding: 71px 60px;
   position: relative;
   z-index: 1;
 }
@@ -5099,6 +5099,7 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-left: -170px;
 }
 .about1-thumb__top {
   margin-bottom: -77px;

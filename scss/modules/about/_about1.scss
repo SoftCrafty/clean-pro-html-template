@@ -12,15 +12,12 @@
         img {
             position: absolute;
             right: 0;
-            top: -51px;
+            top: 0;
             z-index: 5;
         }
     }
     &-content {
-        // border-radius: 10px;
-        // background: var(--BG-color-Smoke-BG-color-2, #ECF1F5);
-        // padding: 65px 60px;
-            padding: 45px 60px;
+            padding: 71px 60px;
             position: relative;
             z-index: 1;
 
@@ -168,6 +165,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        margin-left: -170px;
         &__top {
             margin-bottom: -77px;
         }

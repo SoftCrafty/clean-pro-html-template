@@ -5,8 +5,9 @@
     &-card {
         position: relative;
 
-        &-thumb {
+        &__thumb {
             position: relative;
+            text-align: center;
         }
         &-content {
             margin-top: -50px;

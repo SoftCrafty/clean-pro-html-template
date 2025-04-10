@@ -2161,6 +2161,10 @@ span {
   background: var(--BG-color-Smoke-BG-color-2, #ECF1F5);
 }
 
+#serviceSlider1 {
+  padding: 0 20px 20px;
+}
+
 .form__group span {
   color: var(--title);
   font-weight: 600;
@@ -5585,8 +5589,9 @@ img {
 .service1-card {
   position: relative;
 }
-.service1-card-thumb {
+.service1-card__thumb {
   position: relative;
+  text-align: center;
 }
 .service1-card-content {
   margin-top: -50px;

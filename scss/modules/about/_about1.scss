@@ -9,6 +9,15 @@
         bottom: 0;
         z-index: 5;
 
+        @include breakpoint (max-xl4) {
+            right: 12.7%;
+        }
+        @include breakpoint (max-xl3) {
+            right: 10.7%;
+        }
+        @include breakpoint (max-xl2) {
+            right: 8%;
+        }
         @include breakpoint (max-xxxl) {
             right: 41px;
         }
@@ -20,11 +29,11 @@
         }
     }
     &-content {
-            padding: 71px 60px;
+            padding: 60px 60px;
             position: relative;
             z-index: 7;
             @include breakpoint (max-xxl) {
-                padding: 71px 30px;
+                padding: 60px 30px;
             }
             @include breakpoint (max-xl) {
                 display: flex;
@@ -105,7 +114,8 @@
             }
         }
         &-info {
-            padding-top: 40px;
+            padding-top: 35px;
+            padding-bottom: 25px;
             display: flex;
             gap: 30px;
             @include breakpoint(max-xl){

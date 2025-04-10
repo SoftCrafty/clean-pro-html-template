@@ -11,7 +11,10 @@
         position: relative;
         z-index: 5;
         max-width: 672px;
-
+        padding-bottom: 35px;
+        @include breakpoint (max-xl){
+            padding-bottom: 0px;
+        }
     }
     &-card {
         position: relative;

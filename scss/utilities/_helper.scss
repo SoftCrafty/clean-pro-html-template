@@ -101,6 +101,12 @@
     padding-top: 128px;
   }
 }
+.pt-120 {
+  padding-top: 120px;
+  @include breakpoint (max-xl){
+    padding-top: 30px;
+  }
+}
 
 //Colors
 .bg-theme {

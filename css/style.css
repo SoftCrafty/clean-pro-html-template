@@ -2148,6 +2148,15 @@ span {
   }
 }
 
+.pt-120 {
+  padding-top: 120px;
+}
+@media (max-width: 1199px) {
+  .pt-120 {
+    padding-top: 30px;
+  }
+}
+
 .bg-theme {
   background-color: var(--theme) !important;
 }
@@ -5647,6 +5656,12 @@ img {
   position: relative;
   z-index: 5;
   max-width: 672px;
+  padding-bottom: 35px;
+}
+@media (max-width: 1199px) {
+  .project1 .section-top {
+    padding-bottom: 0px;
+  }
 }
 .project1-card {
   position: relative;

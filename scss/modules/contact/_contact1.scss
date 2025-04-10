@@ -6,6 +6,10 @@
     &__shape {
         position: absolute;
         z-index: 1;
+        width: 100%;
+        img {
+            width: 100%;
+        }
     }
     &-info {
         top: 82px;
@@ -31,6 +35,9 @@
             font-style: normal;
             font-weight: 700;
             line-height: 26px; /* 86.667% */
+            @include breakpoint (max-sm) {
+                font-size: 25px;
+            } 
         }
         &__text {
             padding-bottom: 25px;
@@ -51,11 +58,17 @@
                 @include breakpoint (max-md) {
                     font-size: 35px;
                 } 
+                @include breakpoint (max-sm) {
+                    font-size: 30px;
+                } 
             }
         }
         &-btn {
             display: flex;
             gap: 30px;
+            @include breakpoint (max-xxsmall){
+                gap: 7px;
+            }  
             &__book {
                 a {
 
@@ -77,6 +90,10 @@
                     i {
                         transform: rotate(-45deg);
                     }
+                    @include breakpoint (max-xxsmall){
+                        height: 45px;
+                        padding: 22px 16px;
+                    } 
                 }
             }
             &__contact {
@@ -96,6 +113,10 @@
                     font-weight: 600;
                     line-height: normal;
                     text-transform: uppercase;
+                    @include breakpoint (max-xxsmall){
+                        height: 45px;
+                        padding: 22px 16px;
+                    } 
                 }
             }
         }

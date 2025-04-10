@@ -44,6 +44,13 @@
             font-style: normal;
             font-weight: 600;
             line-height: 28px; /* 155.556% */
+            @include breakpoint (max-md){
+                font-size: 14px;
+            }
+            @include breakpoint (max-sm){
+                flex-direction: column;
+                display: flex;
+            }
             &__one {
                 display: inline-flex;
                 padding: 20px 25px;
@@ -54,6 +61,9 @@
                 background: var(--Default-color-White-color, #FFF);
                 @include breakpoint (max-lg){
                     padding: 20px 15px;
+                }
+                @include breakpoint (max-md){
+                    padding: 10px 5px;
                 }
             }
             &__two {
@@ -73,6 +83,10 @@
                 @include breakpoint (max-lg){
                     padding: 25px 15px;
                 }
+                @include breakpoint (max-md){
+                    font-size: 14px;
+                    padding: 15px 5px;
+                }
             }
             &__three {
                 display: inline-flex;
@@ -84,6 +98,9 @@
                 background: var(--Default-color-White-color, #FFF);
                 @include breakpoint (max-lg){
                     padding: 20px 15px;
+                }
+                @include breakpoint (max-md){
+                    padding: 10px 5px;
                 }
             }
         }
@@ -100,6 +117,9 @@
             @include breakpoint(max-md){
                 gap: 35px;
             }
+            @include breakpoint(max-xsmall){
+                gap: 15px;
+            }
             &-left {
                 padding-top: 10px;
                 &__icon {
@@ -115,6 +135,10 @@
                         font-style: normal;
                         font-weight: 600;
                         line-height: 34px; /* 141.667% */
+                        @include breakpoint (max-sm){
+                            font-size: 20px;
+                            line-height: 30px;
+                        }  
                     }
                 }
                 &__link {
@@ -135,7 +159,11 @@
                         font-size: 24px;
                         font-style: normal;
                         font-weight: 600;
-                        line-height: 34px; /* 141.667% */                        
+                        line-height: 34px; 
+                        @include breakpoint (max-sm){
+                            font-size: 20px;
+                            line-height: 30px;
+                        }                       
                     }
                     p {
                         color: #000;
@@ -150,6 +178,9 @@
             &__verticalLine {
                 padding-top: 5px;
                 padding-right: 20px;
+                @include breakpoint (max-md) {
+                    display: none;
+                }
             }
             &-right {
                 &-list {
@@ -159,9 +190,6 @@
                     align-items: center;
 
                     &-item {
-                        &__icon {
-                            
-                        }
                         &__title {
                             color: #000;
                             font-family: Raleway;
@@ -188,6 +216,9 @@
                     &__img {
                         padding-top: 15px;
                     }
+                    @include breakpoint (max-xsmall) {
+                        padding-top: 0px;
+                    }
                 }
             }
         }
@@ -213,12 +244,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            &__left {
-
-            }
-            &__right {
-
-            }
         }
         &__bottom {
             margin-top: -77px;

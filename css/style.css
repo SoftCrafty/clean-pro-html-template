@@ -5001,6 +5001,17 @@ img {
   font-weight: 600;
   line-height: 28px; /* 155.556% */
 }
+@media (max-width: 767px) {
+  .about1-content-btn {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575px) {
+  .about1-content-btn {
+    flex-direction: column;
+    display: flex;
+  }
+}
 .about1-content-btn__one {
   display: inline-flex;
   padding: 20px 25px;
@@ -5013,6 +5024,11 @@ img {
 @media (max-width: 991px) {
   .about1-content-btn__one {
     padding: 20px 15px;
+  }
+}
+@media (max-width: 767px) {
+  .about1-content-btn__one {
+    padding: 10px 5px;
   }
 }
 .about1-content-btn__two {
@@ -5035,6 +5051,12 @@ img {
     padding: 25px 15px;
   }
 }
+@media (max-width: 767px) {
+  .about1-content-btn__two {
+    font-size: 14px;
+    padding: 15px 5px;
+  }
+}
 .about1-content-btn__three {
   display: inline-flex;
   padding: 20px 25px;
@@ -5047,6 +5069,11 @@ img {
 @media (max-width: 991px) {
   .about1-content-btn__three {
     padding: 20px 15px;
+  }
+}
+@media (max-width: 767px) {
+  .about1-content-btn__three {
+    padding: 10px 5px;
   }
 }
 .about1-content-info {
@@ -5067,6 +5094,11 @@ img {
     gap: 35px;
   }
 }
+@media (max-width: 449px) {
+  .about1-content-info {
+    gap: 15px;
+  }
+}
 .about1-content-info-left {
   padding-top: 10px;
 }
@@ -5085,6 +5117,12 @@ img {
   font-weight: 600;
   line-height: 34px; /* 141.667% */
 }
+@media (max-width: 575px) {
+  .about1-content-info-left__title h6 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 .about1-content-info-left__link {
   color: var(--Text-color-Title-color, #16171A);
   font-family: "DM Sans";
@@ -5102,7 +5140,13 @@ img {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 34px; /* 141.667% */
+  line-height: 34px;
+}
+@media (max-width: 575px) {
+  .about1-content-info-left__rating h6 {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 .about1-content-info-left__rating p {
   color: #000;
@@ -5115,6 +5159,11 @@ img {
 .about1-content-info__verticalLine {
   padding-top: 5px;
   padding-right: 20px;
+}
+@media (max-width: 767px) {
+  .about1-content-info__verticalLine {
+    display: none;
+  }
 }
 .about1-content-info-right-list {
   padding-bottom: 23px;
@@ -5146,6 +5195,11 @@ img {
 }
 .about1-content-info-right-profile__img {
   padding-top: 15px;
+}
+@media (max-width: 449px) {
+  .about1-content-info-right-profile {
+    padding-top: 0px;
+  }
 }
 .about1-thumb {
   position: relative;

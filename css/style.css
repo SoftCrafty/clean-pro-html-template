@@ -6092,11 +6092,24 @@ img {
   border-radius: 20px 20px 0px 0px;
   background: linear-gradient(180deg, #16171A 0%, #3CA200 100%);
 }
-@media (max-width: 991px) {
+@media (max-width: 1399px) {
   .blog1-card-one-content {
-    padding: 20px;
-    margin: 0px auto auto;
-    max-width: none;
+    margin: -135px auto auto;
+  }
+}
+@media (max-width: 1199px) {
+  .blog1-card-one-content {
+    max-width: 768px;
+  }
+}
+@media (max-width: 767px) {
+  .blog1-card-one-content {
+    margin: -118px auto auto;
+  }
+}
+@media (max-width: 575px) {
+  .blog1-card-one-content {
+    margin: -80px auto auto;
   }
 }
 .blog1-card-one-content-meta {
@@ -6174,6 +6187,11 @@ img {
   opacity: 0.12;
   z-index: 9;
 }
+@media (max-width: 1399px) {
+  .blog1-card-one__shape {
+    display: none;
+  }
+}
 .blog1-card-two {
   position: relative;
   display: flex;
@@ -6184,7 +6202,7 @@ img {
 .blog1-card-two:not(:last-child) {
   margin-bottom: 24px;
 }
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .blog1-card-two {
     flex-direction: column;
   }
@@ -6202,6 +6220,12 @@ img {
 @media (max-width: 767px) {
   .blog1-card-two__thumb {
     border-radius: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .blog1-card-two__thumb {
+    width: 100%;
+    margin-right: 0;
   }
 }
 .blog1-card-two-content {
@@ -6276,6 +6300,11 @@ img {
   right: 0;
   opacity: 0.12;
   z-index: 9;
+}
+@media (max-width: 1399px) {
+  .blog1-card-two__shape {
+    display: none;
+  }
 }
 
 /* 12. Pricing */

@@ -21,10 +21,17 @@
                 margin: -222px auto auto;
                 border-radius: 20px 20px 0px 0px;
                 background: linear-gradient(180deg, #16171A 0%, #3CA200 100%);
-                @include breakpoint (max-lg) {
-                    padding: 20px;
-                    margin: 0px auto auto;
-                    max-width: none;
+                @include breakpoint (max-xxl) {
+                    margin: -135px auto auto;
+                }
+                @include breakpoint (max-xl) {
+                    max-width: 768px;
+                }
+                @include breakpoint (max-md) {
+                    margin: -118px auto auto;
+                }
+                @include breakpoint (max-sm) {
+                    margin: -80px auto auto;
                 }
                 &-meta {
                     display: flex;
@@ -97,6 +104,9 @@
                 left: 7%;
                 opacity: 0.12;
                 z-index: 9;
+                @include breakpoint (max-xxl) {
+                    display: none;
+                }  
             }
         }
         &-two {
@@ -108,7 +118,7 @@
             &:not(:last-child) {
                 margin-bottom: 24px;
             }
-            @include breakpoint (max-md) {
+            @include breakpoint (max-sm) {
                flex-direction: column;
             }
     
@@ -122,7 +132,11 @@
                     width: 100%;
                 }
                 @include breakpoint (max-md) { 
-                border-radius: 20px;
+                    border-radius: 20px;
+                }
+                @include breakpoint (max-sm) {
+                    width: 100%;
+                    margin-right: 0;
                 }
             }
             &-content {
@@ -191,6 +205,9 @@
                 right: 0;
                 opacity: 0.12;
                 z-index: 9;
+                @include breakpoint (max-xxl) {
+                    display: none;
+                } 
             }
         }
     }

@@ -16,9 +16,9 @@
             &-content {
                 position: relative;
                 z-index: 1;
-                padding: 30px;
+                padding: 25px 30px;
                 max-width: 565px;
-                margin: -206px auto auto;
+                margin: -222px auto auto;
                 border-radius: 20px 20px 0px 0px;
                 background: linear-gradient(180deg, #16171A 0%, #3CA200 100%);
                 @include breakpoint (max-lg) {
@@ -31,7 +31,7 @@
                     align-items: center;
                     display: flex;
                     gap: 17px;
-                    padding-bottom: 6px;
+                    padding-bottom: 20px;
                     color: var(--Default-color-White-color, #FFF);
                     font-family: "DM Sans";
                     font-size: 14px;
@@ -75,7 +75,7 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: 26px; /* 162.5% */ 
-                    padding-bottom: 30px;               
+                    padding-bottom: 15px;              
                 }
                 &__link {
                     color: var(--Default-color-White-color, #FFF);
@@ -130,7 +130,7 @@
                 border-radius: 15px;
                 background: var(--Default-color-White-color, #FFF);
                 box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.08);
-                padding: 33px;
+                padding: 25px 30px;
                 @include breakpoint (max-md) {
                     padding: 20px;
                 }
@@ -138,7 +138,7 @@
                     display: flex;
                     align-items: center;
                     gap: 14px;
-                    padding-bottom: 6px;
+                    padding-bottom: 16px;
                     color: var(--Text-color-Body-text-color, #727272);
                     font-family: "DM Sans";
                     font-size: 14px;
@@ -166,7 +166,7 @@
                     font-style: normal;
                     font-weight: 600;
                     line-height: 34px; /* 141.667% */
-                    padding-bottom: 40px;
+                    padding-bottom: 25px;
                     @include breakpoint (max-md) {
                         padding-bottom: 20px;
                     }
@@ -187,7 +187,7 @@
             } 
             &__shape {
                 position: absolute;
-                bottom: 11%;
+                bottom: 14.5%;
                 right: 0;
                 opacity: 0.12;
                 z-index: 9;

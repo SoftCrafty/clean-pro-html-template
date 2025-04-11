@@ -2196,14 +2196,14 @@ span {
 .nav-pills .nav-link {
   color: var(--theme);
   font-family: "DM Sans", sans-serif;
-  font-size: 18.281px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 34px;
+  line-height: 26px;
   border: 0;
   flex: 1;
   text-align: center;
-  padding: 10px 20px;
+  padding: 8px 32px;
   transition: all 0.3s ease;
   border-radius: 0;
 }
@@ -2212,10 +2212,10 @@ span {
   color: var(--white);
 }
 .nav-pills .nav-link:first-child.active {
-  border-radius: 45px 0 0 45px;
+  border-radius: 30px;
 }
 .nav-pills .nav-link:last-child.active {
-  border-radius: 0 45px 45px 0;
+  border-radius: 30px;
 }
 
 .form__group span {

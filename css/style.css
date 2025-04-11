@@ -2183,6 +2183,41 @@ span {
   padding: 0 20px 20px;
 }
 
+.nav-pills {
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  display: flex;
+  display: inline-block;
+}
+.nav-pills .nav-item {
+  display: flex;
+  flex-direction: row;
+}
+.nav-pills .nav-link {
+  color: var(--theme);
+  font-family: "DM Sans", sans-serif;
+  font-size: 18.281px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  border: 0;
+  flex: 1;
+  text-align: center;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+.nav-pills .nav-link.active {
+  background: var(--theme);
+  color: var(--white);
+}
+.nav-pills .nav-link:first-child.active {
+  border-radius: 45px 0 0 45px;
+}
+.nav-pills .nav-link:last-child.active {
+  border-radius: 0 45px 45px 0;
+}
+
 .form__group span {
   color: var(--title);
   font-weight: 600;

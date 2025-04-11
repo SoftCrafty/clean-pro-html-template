@@ -132,4 +132,43 @@
   padding: 0 20px 20px;
 }
 
+.nav-pills {
+  border: 1px solid $border-color;
+  border-radius: 50px;
+  display: flex; 
+  display: inline-block;
+
+  .nav-item {
+    display: flex;
+    flex-direction: row;
+  }
   
+  .nav-link {
+    color: $theme-color;				  
+    font-family: $body-font;
+    font-size: 18.281px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; 
+    border: 0;
+    flex: 1; 
+    text-align: center;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 0; 
+  
+    &.active {
+    background: $theme-color;
+    color: $white;
+    }
+  
+    &:first-child.active {
+    border-radius: 45px 0 0 45px;
+
+    }
+  
+    &:last-child.active {
+    border-radius: 0 45px 45px 0;
+    }
+  }
+}		

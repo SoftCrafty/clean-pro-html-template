@@ -6250,15 +6250,31 @@ img {
 .pricing1-card {
   position: relative;
 }
+@media (max-width: 449px) {
+  .pricing1-card {
+    border: 1px solid #D8DDE1;
+    border-radius: 25px;
+  }
+}
 .pricing1-card-shape1 {
   position: absolute;
   z-index: 1;
+}
+@media (max-width: 449px) {
+  .pricing1-card-shape1 {
+    display: none;
+  }
 }
 .pricing1-card-shape2 {
   position: absolute;
   z-index: 1;
   bottom: -20px;
   left: 8px;
+}
+@media (max-width: 449px) {
+  .pricing1-card-shape2 {
+    display: none;
+  }
 }
 .pricing1-card-content {
   position: relative;
@@ -6311,6 +6327,11 @@ img {
 @media (max-width: 1599px) {
   .pricing1-card-content__btn span {
     padding: 18px 105px;
+  }
+}
+@media (max-width: 449px) {
+  .pricing1-card-content__btn span {
+    padding: 22px 42px;
   }
 }
 .pricing1-card-value {

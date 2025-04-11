@@ -107,6 +107,12 @@
     padding-top: 30px;
   }
 }
+.wcu-padding {
+  padding: 120px 0;
+  @include breakpoint(max-xxxl) {
+    padding: 92px 0;
+  }
+}
 
 //Colors
 .bg-theme {

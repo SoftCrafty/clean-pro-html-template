@@ -5663,6 +5663,17 @@ img {
     padding-bottom: 0px;
   }
 }
+@media (max-width: 767px) {
+  .project1 .section-top__subtitle2 {
+    color: var(--title);
+  }
+  .project1 .section-top__title2 {
+    color: var(--title);
+  }
+  .project1 .section-top__desc2 {
+    color: var(--title);
+  }
+}
 .project1-card {
   position: relative;
 }

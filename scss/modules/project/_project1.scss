@@ -15,6 +15,17 @@
         @include breakpoint (max-xl){
             padding-bottom: 0px;
         }
+        @include breakpoint (max-md){
+            &__subtitle2 {
+                color: $title-color;
+            }
+            &__title2 {
+                color: $title-color;
+            }
+            &__desc2 {
+                color: $title-color;
+            }
+        }
     }
     &-card {
         position: relative;
